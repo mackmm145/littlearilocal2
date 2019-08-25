@@ -1,0 +1,236 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree
+*= require font-awesome
+ *= require_self
+ */
+
+
+body {
+  background-color: #F3E5D7;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#check {
+  background-color: #FFFFFF;
+  border: 5px solid #5B4B38;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 600px;
+  width: 284px;
+  clear: left;
+  float: left;
+  padding: 0 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  position: relative;
+  color: #6E6863;
+  overflow: hidden;
+
+}
+
+#order {
+  margin: 1px 0;
+  overflow: hidden;
+  height: 537px;
+}
+
+.main-item {
+  font-weight: bold;
+  color: #4B3B28;
+  font-size: 18px;
+}
+
+#total {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 274px;
+  height: 50px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border-top: 3px solid #4B3B28;
+  color:  #4B3B28;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.image_blurbs {
+  height: 600px;
+  width: 700px;
+  float: left;
+  margin-left:-22px;
+}
+
+.toggle-image {
+  height: 600px;
+  width: 700px;
+  float: left;
+  margin-left:-22px;
+
+}
+
+.first-image {
+	z-index: -3;
+  display: none;
+}
+
+.second-image {
+	z-index: -2;
+	display: none;
+}
+
+.third-image {
+	z-index: -1;
+	display: none;
+}
+
+.first-image.show {
+	display: block !important;
+}
+
+.second-image.show {
+	display: block !important;
+}
+
+.third-image.show {
+	display: block !important;
+}
+
+
+
+/* LUNCH CSS */
+
+#lunch-container {
+  background-color: #F3E5D7;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  height: 100%;
+  float: left;
+  clear: left;
+}
+
+#lunch-header {
+  width: 100%;
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 36px;
+  font-weight: bold;
+  float: left;
+  clear: left;
+}
+
+#lunch-hours {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+#lunch-body {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 24px;
+
+}
+
+.lunch-item {
+  width: 100%;
+  clear: left;
+  float: left;
+  padding: 10px 0px;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXx  Ramen XXXXXXXXXXXXXXXXXXXX */
+
+.ramen-container {
+  height: 600px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.ramen-container > div {
+  width: 700px;
+}
+
+.ramen-title {
+  margin: 20px 0px 0 30px;
+  width: 650px !important;
+  font-size: 30px;
+  color: #5B4B38;
+  font-weight: bold;
+  border-bottom: 2px solid #4B3B28;
+}
+
+.ramen-items-container {
+  padding: 12px 12px 12px 30px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-around;
+}
+
+.ramen-standard-items {
+
+}
+
+.ramen-request-items {
+
+}
+
+.ramen-check {
+  display: none;
+}
+
+.ramen-item {
+  margin: 6px;
+  height: 90px;
+  width: 200px;
+  border-radius: 8px;
+  background-color: rgb(117, 77, 53);
+  bottom: 30px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 1px 1px 1px rgb(20, 14, 10);
+  display:flex;
+  flex-flow: column wrap;
+}
+
+.ramen-item-selected {
+  background-color: rgb(61, 50, 36);
+}
+
+
+.ramen-request-item-price {
+  font-size: 16px;
+}
+
+.ramen-item-inner {
+  margin: auto;
+}
+
+.ramen-item-descriptor1 {
+  border-bottom: 1px solid #f3e6d6;
+  color: #f3e6d6;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}

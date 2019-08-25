@@ -1,0 +1,12 @@
+09:09:25------------------- Socket Thread Started
+Socket Thread Errno::ECONNREFUSED - Exception Message: Connection refused - connect(2) for "127.0.0.1" port 6880
+Reopening connection to posdriver after Errno::ECONNREFUSED
+09:09:40------------------- Socket Thread Started
+Socket Thread Errno::ECONNREFUSED - Exception Message: Connection refused - connect(2) for "127.0.0.1" port 6880
+Reopening connection to posdriver after Errno::ECONNREFUSED
+09:10:46------------------- Socket Thread Started
+Socket Thread Errno::ECONNREFUSED - Exception Message: Connection refused - connect(2) for "127.0.0.1" port 6880
+Reopening connection to posdriver after Errno::ECONNREFUSED
+09:13:06------------------- Socket Thread Started
+Socket Thread Errno::ECONNREFUSED - Exception Message: Connection refused - connect(2) for "127.0.0.1" port 6880
+Reopening connection to posdriver after Errno::ECONNREFUSED

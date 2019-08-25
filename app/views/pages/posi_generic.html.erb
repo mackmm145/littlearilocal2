@@ -1,0 +1,147 @@
+<div id="check">
+  <div id="order"></div>
+  <div id=total>Total:  0.00</div>
+</div>
+<div class="image-blurbs main-container">
+  <div class="toggle-image first-image show">
+    <%= image_tag "rotating/little_ari_register_back1.jpg" %>
+  </div>
+
+  <div class="toggle-image second-image">
+    <%= image_tag "rotating/little_ari_register_back2.jpg" %>
+  </div>
+
+  <div class="toggle-image third-image">
+    <%= image_tag "rotating/little_ari_register_back3.jpg" %>
+  </div>
+</div>
+<div class="ramen-container main-container">
+  <div class="ramen-title">
+    Ramen - Standard Toppings
+  </div>
+  <div class="ramen-request-items ramen-items-container">
+    <div id="moyashi" class="ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Moyashi</div>
+        <div>Bean Sprouts</div>
+      </div>
+    </div>
+    <div id="negi" class="ramen-request-items ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Negi</div>
+        <div>Green Onions</div>
+      </div>
+    </div>
+  </div>
+  <div class="ramen-title">
+    Ramen - By Request Toppings
+  </div>
+  <div class="ramen-request-items ramen-items-container">
+    <div id="spicy-paste" class="ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Gekikara</div>
+        <div>Spicy <span class="ramen-request-item-price">(+1.00)</span></div>
+      </div>
+    </div>
+    <div id="nori" class="ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Nori</div>
+        <div>Seaweed Paper</div>
+      </div>
+    </div>
+    <div id="iri-goma" class="ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Iri Goma</div>
+        <div>Sesame Seeds</div>
+      </div>
+    </div>
+    <div id="menma" class="ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Menma</div>
+        <div>Bamboo Shoots</div>
+      </div>
+    </div>
+    <div id="beni-shoga" class="ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Beni Shoga</div>
+        <div>Pickled Ginger</div>
+      </div>
+    </div>
+    <div id="naruto" class="ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Naruto</div>
+        <div>Fish Cake</div>
+      </div>
+    </div>
+    <div class="ramen-item">
+      <div id="negi-abura" class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">Negi Abura</div>
+        <div>Green Onion Oil</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script>
+(function() {
+  this.App || (this.App = {});
+
+  App.cable = ActionCable.createConsumer();
+
+  $(document).ready(function(){
+    $('.main-container').hide()
+    // $('.ramen-container').hide()
+    $('.ramen-container').show()
+
+    App.terminalChannel = App.cable.subscriptions.create( { channel: 'PositouchChannel', terminal: '<%= @term_num.to_s %>' }, {
+      received: function( response ) {
+        $('#check #order')[0].innerHTML = response['check'];
+        $('#check #total')[0].innerHTML = "Total:&nbsp;&nbsp;" + response['check_total'];
+
+        var element = document.getElementById("order");
+        element.scrollTop = element.scrollHeight;
+        return false;
+      },
+      disconnected: function() {
+        console.log("disconnected")
+        setTimeout(function(){
+          window.location.reload(true);
+        }, 5000);
+      }
+    });
+
+    App.displayChannel = App.cable.subscriptions.create( { channel: 'CustomerDisplayChannel', terminal: '<%= @term_num.to_s %>' }, {
+      connected: function() {
+        console.log( "connected to customer display" )
+
+      },
+      received: function( response ) {
+        console.log( response[ 'display_state' ] + " : " + response['state'] )
+        $('.main-container').hide()
+        switch( response[ 'display_state' ] ) {
+          case 'ramen_toppings':
+            $('.ramen-container').show()
+            break
+          case 'image_blurbs':
+            $('.image-blurbs').show()
+            break
+        }
+      },
+      disconnected: function() {
+        console.log( "disconnected from customer display" )
+      }
+    });
+
+    $.get( "/terminal<%= @term_num.to_s %>");
+    $imageEls = $('.toggle-image');
+    var index = 0;
+
+    setInterval(function () {
+      index = index + 1 < $imageEls.length ? index + 1 : 0;
+      $imageEls.eq(index).addClass('show');
+      $imageEls.eq(index - 1).removeClass('show');
+    }, 2000);
+  })
+
+}).call(this);
+</script>

@@ -1,0 +1,127 @@
+GroupType
+0 - Must Select
+1 - May Select Multi
+2 - May Select One
+3 - May Select
+
+
+DeviceNumber
+0 terminal 1?
+5 VDU?
+
+
+function#
+1  log in
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (1)
+    DeviceNumber
+    UserNumber
+2  create check?
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (2)
+    DeviceNumber
+    UserNumber
+    CheckNumber
+    TableNumber
+3  select order item, also used for modifiers
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (3)
+    DeviceNumber
+    UserNumber
+    CheckNumber
+    TableNumber
+    ItemNumber
+    ItemQuantity
+    ItemPrice
+    SubFunction
+      Main item
+      Modifier
+4  Delete
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (4)
+    DeviceNuOpember
+    UserNumbOpeer
+    CheckNumOpeber
+    TableNumOpeber
+    ItemNumber
+    ItemQuantity
+    ItemPrice
+    SubFunction
+      Main Item
+      ### is there a subfunction Modifier
+    DeletionReason - DeletionReasonText
+       1 - ORDER MISTAKE
+      15 - DeleteLastBeforeSend
+      16 - DeleteBeforeSend
+
+8  send?
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (8)
+    DeviceNumber
+    UserNumber
+    CheckNumber
+    TableNumber
+    CheckTotal
+    TaxTotal
+11 close check?
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (11)
+    DeviceNumber
+    UserNumber
+    CheckNumber
+    TableNumber
+    CheckTotal
+    TaxTotal
+12 credit card
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (12)
+    DeviceNumber
+    UserNumber
+    CheckNumber
+    TableNumber
+    Amount
+    Memo
+    SubFunction
+      Sale
+      Gratuity
+    CardType
+16 set discount?
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (16)
+    DeviceNumber
+    UserNumber
+    CheckNumber
+    TableNumber
+    DiscountType
+20  quit order screen?
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (20)
+    DeviceNumber
+    UserNumber
+    CheckNumber
+    TableNumber
+    Amount
+    Code
+      4?
+27 No Sale?
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (27)
+    DeviceNumber
+    UserNumber
+    Drawer
+      1
+
+29 bump?
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (29)
+    DeviceNumber
+    CheckNumber
+    BumpTime
+
+33 Overring
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (33)
+    DeviceNumber
+    UserNumber
+    ManagerOperationNumber
+    ManagerOperationName

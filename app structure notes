@@ -1,0 +1,32 @@
+for access from my computer - set up a mount to sc/XML
+  sudo mount -v -t cifs //10.99.10.98/xml /mnt/xml -o user=PiedmontTech,uid=$(id -u),gid=$(id -g)
+  sudo mount -v -t cifs //10.99.10.99/testscreen /mnt/lajktestscreen -o user=PiedmontTech,uid=$(id -u),gid=$(id -g)
+
+for Groups/Modifiers - Sequence is important
+Cell.match_title_start("Shrimp Lunch Bento").first.modifiers.select(:Title, :UniqueID, :Sequence).order(:Sequence).each { |m| puts m.UniqueID; puts m.Title }; puts
+
+
+have a worker that starts a socket daemon
+  - opens socket
+  - monitors incoming journal entries to find out state of terminal
+  - reads the journal entry to decide what's happening on the terminal
+  - send orders to get open check info
+  - directs the storage and deletion of redis keys
+  -
+
+  display stuff checked via communication with frontend?
+
+  object model on top of redis
+
+    handling journal entries
+    each opencheck should also have the current check status listed at well??
+
+    xml check text
+    xml = File.open(ARGV.first).read
+    json = Hash.from_xml(xml).to_json
+
+
+when first loading, it should parse all the openchecks into redis - use a config/initializer
+openchecks should expire after 1 day?
+
+LOOKK FOR ----- OpenCheckLocation & CurrentTerminal in ChecKHeader

@@ -1,0 +1,710 @@
+
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:18:12</TransactionTime>
+
+    <FunctionNumber>1</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:18:45</TransactionTime>
+
+    <FunctionNumber>2</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:18:49</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>1015</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>8.80</ItemPrice>
+
+    <SubFunction>Main Item</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:18:54</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2007</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>0.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:18:55</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2038</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>0.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:18:58</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2043</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>0.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:18:59</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>1015</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>8.80</ItemPrice>
+
+    <SubFunction>Main Item</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:00</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2007</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>0.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:01</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2043</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>0.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:12</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>3000</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>9.95</ItemPrice>
+
+    <SubFunction>Main Item</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:15</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2602</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>0.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:19</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2604</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>0.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:24</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>3000</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>9.95</ItemPrice>
+
+    <SubFunction>Main Item</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:26</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2604</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>0.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:28</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2605</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>1.00</ItemPrice>
+
+    <SubFunction>Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:31</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>3000</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>9.95</ItemPrice>
+
+    <SubFunction>Modify - Main Item</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:32</TransactionTime>
+
+    <FunctionNumber>3</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>998</TableNumber>
+
+    <ItemNumber>2605</ItemNumber>
+
+    <ItemQuantity>1</ItemQuantity>
+
+    <ItemPrice>1.00</ItemPrice>
+
+    <SubFunction>Modify - Modifier</SubFunction>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:19:40</TransactionTime>
+
+    <FunctionNumber>8</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>36</TableNumber>
+
+    <CheckTotal>42.17</CheckTotal>
+
+    <TaxTotal>2.67</TaxTotal>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:20:03</TransactionTime>
+
+    <FunctionNumber>12</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>36</TableNumber>
+
+    <Amount>42.17</Amount>
+
+    <Memo>xxxxxxxxxxxx8043</Memo>
+
+    <SubFunction>SALE</SubFunction>
+
+    <CardType>VISA</CardType>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:20:10</TransactionTime>
+
+    <FunctionNumber>29</FunctionNumber>
+
+    <DeviceNumber>5</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>92</CheckNumber>
+
+    <BumpTime>11:04</BumpTime>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:22:49</TransactionTime>
+
+    <FunctionNumber>29</FunctionNumber>
+
+    <DeviceNumber>5</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>93</CheckNumber>
+
+    <BumpTime>11:07</BumpTime>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:23:04</TransactionTime>
+
+    <FunctionNumber>29</FunctionNumber>
+
+    <DeviceNumber>5</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>94</CheckNumber>
+
+    <BumpTime>10:25</BumpTime>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:27:55</TransactionTime>
+
+    <FunctionNumber>29</FunctionNumber>
+
+    <DeviceNumber>5</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <BumpTime>8:15</BumpTime>
+
+  </JournalEntry>
+
+</Journal>
+
+<Journal>
+
+  <JournalEntry>
+
+    <BusinessDate>04/22/2019</BusinessDate>
+
+    <TransactionDate>04/22/2019</TransactionDate>
+
+    <TransactionTime>17:35:01</TransactionTime>
+
+    <FunctionNumber>11</FunctionNumber>
+
+    <DeviceNumber>0</DeviceNumber>
+
+    <UserNumber>513</UserNumber>
+
+    <CheckNumber>95</CheckNumber>
+
+    <TableNumber>36</TableNumber>
+
+    <CheckTotal>42.17</CheckTotal>
+
+    <TaxTotal>2.67</TaxTotal>
+
+  </JournalEntry>
+
+</Journal>
+
