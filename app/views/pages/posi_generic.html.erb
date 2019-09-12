@@ -3,7 +3,7 @@
   <div id=total>Total:  0.00</div>
 </div>
 <div class="image-blurbs main-container">
-  <div class="toggle-image first-image show">
+  <div class="toggle-image first-image">
     <%= image_tag "rotating/little_ari_register_back1.jpg" %>
   </div>
 
@@ -13,6 +13,9 @@
 
   <div class="toggle-image third-image">
     <%= image_tag "rotating/little_ari_register_back3.jpg" %>
+  </div>
+  <div class="toggle-image fourth-image show" style="padding-top: 30px;">
+    <%= image_tag "rotating/little_ari_register_back-new_items-little_ari_soup.jpg" %>
   </div>
 </div>
 <div class="ramen-container main-container">
@@ -89,9 +92,9 @@
   App.cable = ActionCable.createConsumer();
 
   $(document).ready(function(){
-    $('.main-container').hide()
-    // $('.ramen-container').hide()
-    $('.ramen-container').show()
+    $('.main-container').show()
+    // $('.main-container').hide()
+    $('.ramen-container').hide()
 
     App.terminalChannel = App.cable.subscriptions.create( { channel: 'PositouchChannel', terminal: '<%= @term_num.to_s %>' }, {
       received: function( response ) {
@@ -136,11 +139,11 @@
     $imageEls = $('.toggle-image');
     var index = 0;
 
-    setInterval(function () {
-      index = index + 1 < $imageEls.length ? index + 1 : 0;
-      $imageEls.eq(index).addClass('show');
-      $imageEls.eq(index - 1).removeClass('show');
-    }, 2000);
+    // setInterval(function () {
+    //   index = index + 1 < $imageEls.length ? index + 1 : 0;
+    //   $imageEls.eq(index).addClass('show');
+    //   $imageEls.eq(index - 1).removeClass('show');
+    // }, 2000);
   })
 
 }).call(this);
