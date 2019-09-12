@@ -24,7 +24,12 @@ private
           loop do
             line_read = socket.gets
             lines_read += line_read if line_read
-            break if ( line_read && line_read.include?('</Journal>') ) || socket.eof?
+            break if ( line_read && line_read.include?('</Journal>') )
+            if socket.eof?
+              sleep 0.2
+              puts "sleeping"
+              next
+            end
           end
           # Rails.logger.debug Time.now.strftime("%I:%M:%S") + ": Waking from gets"
 

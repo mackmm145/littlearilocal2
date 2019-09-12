@@ -13,19 +13,19 @@ class PagesController < ApplicationController
 
 
   def posi1
-    posi_generic 1
+    #posi_generic 1
   end
 
   def posi2
-    posi_generic 2
+    #posi_generic 2
   end
 
   def terminal1
-    terminal_generic 1
+    #terminal_generic 1
   end
 
   def terminal2
-    terminal_generic 2
+    #terminal_generic 2
   end
 
 private
