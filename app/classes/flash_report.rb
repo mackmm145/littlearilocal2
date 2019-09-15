@@ -90,10 +90,13 @@ private
     agent.page.forms[0]["user[username]"] = "mack"
     agent.page.forms[0]["user[password]"] = "Gpeacock)$@!"
     agent.page.forms[0].submit
-
+    puts "logged in"
     response = agent.post(IP_ADDRESS + "pages/test_api", @data.to_json, {'Content-Type' => 'application/json'})
+    puts "json sent"
     puts agent.page
+
     agent.delete IP_ADDRESS + "users/sign_out.json"
+    puts "logged out"
   end
 
 end
