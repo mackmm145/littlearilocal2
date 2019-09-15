@@ -56,6 +56,7 @@ private
 
   def read_dbf_file
     system( "L:")
+    puts DBF_DIR + "hrsales.dbf"
     table = DBF::Table.new( DBF_DIR + "hrsales.dbf")
     today_string = DateTime.now.strftime("%Y-%m-%d")
 
