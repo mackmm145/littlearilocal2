@@ -66,7 +66,7 @@ private
       if record.attributes["DATE"].to_s == today_string
         sales_record = {}
 
-        if record.attributes[ "DATE" ].include?(',')
+        if record.attributes[ "DATE" ].to_s.include?(',')
           date = Date.parse( record.attributes[ "DATE" ] ).strftime("%Y-%m-%d")
         else
           date = record.attributes[ "DATE" ]
