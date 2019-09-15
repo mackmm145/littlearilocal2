@@ -11,12 +11,12 @@ gem 'xml-to-json', '~> 1.0.2'
 gem 'dbf', '~> 4.1.2'
 gem 'mdb', '~> 0.3.2'
 gem 'redis', '~> 4.0'
-gem 'sqlite3'
-# if RUBY_PLATFORM == "x86_64-linux"
-#   gem 'sqlite3'
-# else
-#   gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby.git"
-# end
+# gem 'sqlite3'
+if RUBY_PLATFORM == "x86_64-linux"
+  gem 'sqlite3'
+else
+  gem 'sqlite3', git: "https://github.com/sparklemotion/sqlite3-ruby"
+end
 
 gem 'jquery-rails'
 
