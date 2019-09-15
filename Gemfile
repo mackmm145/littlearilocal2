@@ -16,7 +16,6 @@ if RUBY_PLATFORM == "x86_64-linux"
   gem 'sqlite3'
 else
   gem 'sqlite3', git: "https://github.com/sparklemotion/sqlite3-ruby"
-  gem 'win32ole'
 end
 
 gem 'jquery-rails'
