@@ -10,8 +10,8 @@ class FlashReport
 
   if ENV[ "computer_location" ]  == "lajk"
     IP_ADDRESS = "https://arigatoportal2.net/"
-    DBF_DIR = "L:\\altdbf\\"
-    SC_DIR =  "L:\\sc\\"
+    DBF_DIR = "l:\\altdbf\\"
+    SC_DIR =  "l:\\sc\\"
   else
     IP_ADDRESS = "http://localhost:3000/"
     DBF_DIR = ""
@@ -47,6 +47,7 @@ private
   end
 
   def create_dbf_file
+    system( "cmd /k l:" )
     Dir.chdir( SC_DIR )
     system( "posidbf /ALT 0 0 /f HRSALES")
   end
