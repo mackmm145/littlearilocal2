@@ -8,3 +8,4 @@ q = {
 
 TCPClientForXMLJournal.new( q )
 DisplayServer.new( q, 0 )
+
