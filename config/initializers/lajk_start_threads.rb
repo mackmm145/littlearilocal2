@@ -12,8 +12,10 @@ DisplayServer.new( q, 0 )
 Thread.new do
   loop do
     begin
+      logger.debug Time.now
       if Time.now.hour > 10
         sleep 10 * 60
+        logger.debug "Running Flash Report"
         FlashReport.new
       else
         sleep 60 * 60
