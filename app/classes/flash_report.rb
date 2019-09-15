@@ -92,7 +92,7 @@ private
     agent.page.forms[0].submit
 
     response = agent.post(IP_ADDRESS + "pages/test_api", @data.to_json, {'Content-Type' => 'application/json'})
-    puts response
+    puts agent.page
     agent.delete IP_ADDRESS + "users/sign_out.json"
   end
 
