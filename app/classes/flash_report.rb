@@ -21,7 +21,7 @@ class FlashReport
 
 
   def initialize
-    @data = { auth_token: "rsT3DyzFioK5s62fCkwj", hrsales: [] }
+    @data = { auth_token: ENV['auth_token'], hrsales: [] }
 
     byebug unless ENV[ "computer_location" ] == "lajk"
 
@@ -56,25 +56,27 @@ private
 
   def read_dbf_file
     system( "L:")
-    puts ENV
-    puts DBF_DIR + "hrsales.dbf"
-    table = DBF::Table.new( DBF_DIR + "hrsales.dbf")
     today_string = DateTime.now.strftime("%Y-%m-%d")
 
-    table.each do | record |
+    @data = { auth_token: ENV["auth_token"], hrsales: [] }
+    hourly_sales = []
+
+    hrsales_table = DBF::Table.new( DBF_DIR + "hrsales.dbf")
+    hrsales_table.each do | record |
       # if record.attributes.date
       if record.attributes["DATE"].to_s == today_string
         sales_record = {}
-        puts record.attributes[ "DATE" ].to_s
-        if record.attributes[ "DATE" ].to_s.include?(',')
-          date = Date.parse( record.attributes[ "DATE" ] ).strftime("%Y-%m-%d")
-        else
-          date = record.attributes[ "DATE" ]
-        end
-        sales_record[ :date ] = record.attributes[ "DATE" ].to_s
+        sales_record[ :date ] = record.attributes[ "DATE" ]
         sales_record[ :hour ] = record.attributes[ "HOUR" ]
         sales_record[ :total_sales ] =record.attributes[ "TOT_SALES" ]
-        @data[ :hrsales ] << sales_record
+        hourly_sales << sales_record
+      end
+    end
+
+    ( 0..48 ).each do | hour |
+      this_hour = hourly_sales.find_all{ | h | h[ :hour ] == hour }
+      if this_hour.count > 0
+        @data[ :hrsales ] << this_hour.max_by{ |k| k[ :total_sales ] }
       end
     end
   end
