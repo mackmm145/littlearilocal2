@@ -65,7 +65,13 @@ private
       # if record.attributes.date
       if record.attributes["DATE"].to_s == today_string
         sales_record = {}
-        sales_record[ :date ] = record.attributes[ "DATE" ]
+
+        if record.attributes[ "DATE" ].include?(',')
+          date = Date.parse( record.attributes[ "DATE" ] ).strftime("%Y-%m-%d")
+        else
+          date = record.attributes[ "DATE" ]
+        end
+        sales_record[ :date ] =
         sales_record[ :hour ] = record.attributes[ "HOUR" ]
         sales_record[ :total_sales ] =record.attributes[ "TOT_SALES" ]
         @data[ :hrsales ] << sales_record
