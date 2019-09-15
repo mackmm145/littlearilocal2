@@ -7,12 +7,15 @@ require 'mechanize'
 require 'open-uri'
 
 class FlashReport
-  DBF_DIR = "L:\\altdbf\\"
-  SC_DIR =  "L:\\sc\\"
+
   if ENV[ "computer_location" ]  == "lajk"
     IP_ADDRESS = "https://arigatoportal2.net/"
+    DBF_DIR = "L:\\altdbf\\"
+    SC_DIR =  "L:\\sc\\"
   else
     IP_ADDRESS = "http://localhost:3000/"
+    DBF_DIR = ""
+    SC_DIR = ""
   end
   @data
 
@@ -44,7 +47,8 @@ private
   end
 
   def create_dbf_file
-    system( "cd " + SC_DIR + '&& posidbf /ALT 0 0 /f HRSALES')
+    Dir.chdir( SC_DIR )
+    system( "posidbf /ALT 0 0 /f HRSALES')
   end
 
   def read_dbf_file
