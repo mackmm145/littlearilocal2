@@ -58,6 +58,22 @@ private
     system( "L:")
     today_string = DateTime.now.strftime("%Y-%m-%d")
 
+    # table.each do | record |
+    #   # if record.attributes.date
+    #   if record.attributes["DATE"].to_s == today_string
+    #     sales_record = {}
+    #     puts record.attributes[ "DATE" ].to_s
+    #     if record.attributes[ "DATE" ].to_s.include?(',')
+    #       date = Date.parse( record.attributes[ "DATE" ] ).strftime("%Y-%m-%d")
+    #     else
+    #       date = record.attributes[ "DATE" ]
+    #     end
+    #     sales_record[ :date ] = record.attributes[ "DATE" ].to_s
+    #     sales_record[ :hour ] = record.attributes[ "HOUR" ]
+    #     sales_record[ :total_sales ] =record.attributes[ "TOT_SALES" ]
+    #     @data[ :hrsales ] << sales_record
+    #   end
+    # end
     @data = { auth_token: ENV["auth_token"], hrsales: [] }
     hourly_sales = []
 
@@ -66,7 +82,7 @@ private
       # if record.attributes.date
       if record.attributes["DATE"].to_s == today_string
         sales_record = {}
-        sales_record[ :date ] = record.attributes[ "DATE" ]
+        sales_record[ :date ] = record.attributes[ "DATE" ].to_s
         sales_record[ :hour ] = record.attributes[ "HOUR" ]
         sales_record[ :total_sales ] =record.attributes[ "TOT_SALES" ]
         hourly_sales << sales_record
