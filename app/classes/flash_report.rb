@@ -19,7 +19,7 @@ class FlashReport
 
   def initialize
     @data = { auth_token: "rsT3DyzFioK5s62fCkwj", hrsales: [] }
-    clear_altdbf
+
     byebug unless ENV[ "computer_location" ] == "lajk"
 
     create_dbf_file
@@ -44,7 +44,6 @@ private
   end
 
   def create_dbf_file
-    system(  )
     system( "cd " + SC_DIR + '&& posidbf /ALT 0 0 /f HRSALES')
   end
 
