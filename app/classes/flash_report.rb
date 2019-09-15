@@ -71,7 +71,7 @@ private
         else
           date = record.attributes[ "DATE" ]
         end
-        sales_record[ :date ] =
+        sales_record[ :date ] = date
         sales_record[ :hour ] = record.attributes[ "HOUR" ]
         sales_record[ :total_sales ] =record.attributes[ "TOT_SALES" ]
         @data[ :hrsales ] << sales_record
