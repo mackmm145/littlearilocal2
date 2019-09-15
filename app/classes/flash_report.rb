@@ -37,6 +37,10 @@ private
     Dir.glob( DBF_DIR.gsub('\\','/') + "*.DBF").entries.each do |f|
       FileUtils.rm f
     end
+
+    Dir.glob( DBF_DIR.gsub('\\','/') + "*.CDX").entries.each do |f|
+      FileUtils.rm f
+    end
   end
 
   def create_dbf_file
