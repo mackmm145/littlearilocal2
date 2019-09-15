@@ -47,9 +47,11 @@ private
   end
 
   def create_dbf_file
-    system( "cmd /k l:" )
-    Dir.chdir( SC_DIR )
+    # system( "cmd /k l: && exit" )
+    system( "L:")
+    Dir.chdir( "l:\\sc" )
     system( "posidbf /ALT 0 0 /f HRSALES")
+
   end
 
   def read_dbf_file
