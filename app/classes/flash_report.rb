@@ -44,6 +44,7 @@ private
   end
 
   def create_dbf_file
+    system( "cd " + SC_DIR )
     system( SC_DIR + 'posidbf /ALT 0 0 /f HRSALES')
   end
 
