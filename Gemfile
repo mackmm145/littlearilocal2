@@ -14,7 +14,7 @@ gem 'redis', '~> 4.0'
 if RUBY_PLATFORM == "x86_64-linux"
   gem 'sqlite3'
 else
-  gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby"
+  gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby.git"
 end
 
 gem 'jquery-rails'
