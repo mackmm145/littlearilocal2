@@ -27,7 +27,7 @@ private
             break if ( line_read && line_read.include?('</Journal>') )
             if socket.eof?
               sleep 0.2
-              puts "sleeping"
+              # puts "sleeping"
               next
             end
           end
