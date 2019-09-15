@@ -87,13 +87,13 @@ private
   def upload_data
     agent = Mechanize.new
     agent.get IP_ADDRESS + "users/sign_in"
-    agent.page.forms[0]["user[username]"] = "mack"
-    agent.page.forms[0]["user[password]"] = "Gpeacock)$@!"
+    agent.page.forms[0]["user[username]"] = ENV["AP2_USERNAME"]
+    agent.page.forms[0]["user[password]"] = ENV["AP2_PASSWORD"]
     agent.page.forms[0].submit
     puts "logged in"
-    response = agent.post(IP_ADDRESS + "pages/test_api", @data.to_json, {'Content-Type' => 'application/json'})
+    response = agent.post(IP_ADDRESS + "pages/test_api.json", @data.to_json, {'Content-Type' => 'application/json'})
     puts "json sent"
-    puts agent.page
+    puts agent.page.inspect
 
     agent.delete IP_ADDRESS + "users/sign_out.json"
     puts "logged out"
