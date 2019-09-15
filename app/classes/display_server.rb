@@ -1,3 +1,5 @@
+IN_DEVELOPMENT  = true ####!!!!!!!!!!!!!!!!!!!!
+
 class DisplayServer
   def initialize( q, term_num )
     term_num = term_num.to_i
@@ -18,20 +20,44 @@ private
       loop do
         begin
           @@parser[ term_num ].command( term_num, q[ :display ][ term_num ].pop )
-          doc = ""; retries = 0
-
-          FileUtils.cp( "C:\\lajk\\OC#{ term_num }.XML", 'L:/sc/XML/REQUESTS_IN_LAJK' )
           begin
-            doc = File.open('L:/sc/XML/OPENCHECKS_LAJK/' + "OC#{ term_num }.XML") { |f| Nokogiri::XML(f) }
+            puts "parser popped"
+            doc = Nokogiri::XML(""); retries = 0
+            begin
+              unless IN_DEVELOPMENT
+                FileUtils.cp( "C:\\lajk\\OC#{ term_num }.XML", 'L:/sc/XML/REQUESTS_IN_LAJK' )
+                sleep 0.1
+                doc = File.open('L:/sc/XML/OPENCHECKS_LAJK/' + "OC#{ term_num }.XML") { |f| Nokogiri::XML(f) }
+              else
+                source = "<OpenChecks>
+                            <Check>
+                              <CheckHeader><CheckTotal>#{ rand(10) }.00</CheckTotal></CheckHeader>
+                              <ItemDetail>
+                                <ItemName>SDFSDF</ItemName>
+                                <FullPrice>#{ rand( 8 ) }.00</FullPrice>
+                              </ItemDetail>
+                            </Check>
+                          </OpenChecks>"
+                doc = Nokogiri::XML source
+              end
+            rescue StandardError => e
+              sleep (retries += 1 ) < 20 ? 0.1 : 2.0
+              puts "inner loop error #{ e.message }"
+              retry if retries < ( IN_DEVELOPMENT ? 3 : 40 )
+            end
           rescue StandardError => e
-            sleep (retries += 1 ) < 20 ? 0.1 : 2.0
-            logger.error "Display Thread - Exception Message: #{ e.message }"
-            retry
+            puts "outer loop error"
           end
-
-          PositouchChannel.broadcast_to term_num, check: parsed_check( doc ), check_total: check_total( doc )
+          puts "preparing message broadcast"
+          puts doc.at_css('CheckHeader CheckTotal')
+          puts parsed_check( doc )
+          puts check_total( doc )
+          puts "sdfdsfsdfsdfsdfsdfewfnwefoewfouwenfowenofnoefwn"
+          puts term_num
+          PositouchChannel.broadcast_to term_num + 1, check: parsed_check( doc ), check_total: check_total( doc )
+          puts "message broadcasted"
         rescue Exception => e
-          Rails.logger.error "terminal display loop error - display thread - nonStandard Error #{ e.class } - Exception Message: #{ e.message }"
+          puts "terminal display loop error - display thread - nonStandard Error #{ e.class } - Exception Message: #{ e.message }"
           next
         end
       end
@@ -40,7 +66,7 @@ private
 
   def parsed_check( check_doc )
     check = ""
-    return check if check_doc.empty?
+
     check_doc.css('OpenChecks Check ItemDetail').each do | itemDetail |
       deleted = false
       doc_at_ItemName = itemDetail.at_css('ItemName')
@@ -61,7 +87,7 @@ private
 
   def check_total( check_doc )
     check_total = ""
-    return check_total if check_doc.empty?
+
     doc_at_CheckTotal = check_doc.at_css('CheckHeader CheckTotal').to_s.gsub("<CheckTotal>","").gsub("</CheckTotal>","")
     check_total = doc_at_CheckTotal
     check_total = "0.00" if check_total.blank?

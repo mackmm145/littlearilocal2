@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.3'
 # ruby '2.5.0'
 
+gem 'mechanize', '2.7.6'
+
 
 gem 'xml-to-json', '~> 1.0.2'
 gem 'dbf', '~> 4.1.2'

@@ -97,7 +97,12 @@
     $('.ramen-container').hide()
 
     App.terminalChannel = App.cable.subscriptions.create( { channel: 'PositouchChannel', terminal: '<%= @term_num.to_s %>' }, {
+      connected: function() {
+        console.log( "connected to positouch broadcast" )
+
+      },
       received: function( response ) {
+        console.log( response )
         $('#check #order')[0].innerHTML = response['check'];
         $('#check #total')[0].innerHTML = "Total:&nbsp;&nbsp;" + response['check_total'];
 
@@ -115,7 +120,7 @@
 
     App.displayChannel = App.cable.subscriptions.create( { channel: 'CustomerDisplayChannel', terminal: '<%= @term_num.to_s %>' }, {
       connected: function() {
-        console.log( "connected to customer display" )
+        console.log( "connected to customer display broadcast" )
 
       },
       received: function( response ) {

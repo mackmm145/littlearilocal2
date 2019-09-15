@@ -14,18 +14,24 @@ class PagesController < ApplicationController
 
   def posi1
     #posi_generic 1
+    @term_num = 1
+    render 'posi_generic'
   end
 
   def posi2
     #posi_generic 2
+    @term_num = 2
+    render 'posi_generic'
   end
 
   def terminal1
     #terminal_generic 1
+    head :ok
   end
 
   def terminal2
     #terminal_generic 2
+    head :ok
   end
 
 private
