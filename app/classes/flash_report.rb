@@ -23,16 +23,11 @@ class FlashReport
   def initialize
     @data = { auth_token: ENV['auth_token'], hrsales: [] }
 
-    byebug unless ENV[ "computer_location" ] == "lajk"
-
     create_dbf_file
-    byebug unless ENV[ "computer_location" ] == "lajk"
 
     read_dbf_file
-    byebug unless ENV[ "computer_location" ] == "lajk"
 
     upload_data
-    byebug unless ENV[ "computer_location" ] == "lajk"
   end
 
 private
@@ -58,22 +53,6 @@ private
     system( "L:")
     today_string = DateTime.now.strftime("%Y-%m-%d")
 
-    # table.each do | record |
-    #   # if record.attributes.date
-    #   if record.attributes["DATE"].to_s == today_string
-    #     sales_record = {}
-    #     puts record.attributes[ "DATE" ].to_s
-    #     if record.attributes[ "DATE" ].to_s.include?(',')
-    #       date = Date.parse( record.attributes[ "DATE" ] ).strftime("%Y-%m-%d")
-    #     else
-    #       date = record.attributes[ "DATE" ]
-    #     end
-    #     sales_record[ :date ] = record.attributes[ "DATE" ].to_s
-    #     sales_record[ :hour ] = record.attributes[ "HOUR" ]
-    #     sales_record[ :total_sales ] =record.attributes[ "TOT_SALES" ]
-    #     @data[ :hrsales ] << sales_record
-    #   end
-    # end
     @data = { auth_token: ENV["auth_token"], hrsales: [] }
     hourly_sales = []
 
@@ -112,8 +91,8 @@ private
     agent.page.forms[0]["user[password]"] = "Gpeacock)$@!"
     agent.page.forms[0].submit
 
-    agent.post IP_ADDRESS + "pages/test_api", @data.to_json, {'Content-Type' => 'application/json'}
-
+    response = agent.post(IP_ADDRESS + "pages/test_api", @data.to_json, {'Content-Type' => 'application/json'})
+    puts response
     agent.delete IP_ADDRESS + "users/sign_out.json"
   end
 
