@@ -39,7 +39,7 @@ private
             stream_hash =  Hash.from_xml(lines_read)
             stream_json = stream_hash.to_json
           end
-
+          puts "hello"
           socket = nil if lines_read == ""
           # puts "device number:"
           # puts stream_hash.dig( "Journal", "JournalEntry", "DeviceNumber" )
