@@ -1,4 +1,4 @@
-IN_DEVELOPMENT  = true ####!!!!!!!!!!!!!!!!!!!!
+IN_DEVELOPMENT  = false ####!!!!!!!!!!!!!!!!!!!!
 
 class DisplayServer
   def initialize( q, term_num )
