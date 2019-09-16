@@ -11,7 +11,7 @@ private
   def spawn_socket_thread( q )
     return Thread.new do
       Thread.current.thread_variable_set( :thread_type, :socket )
-      Rails.logger.debug Time.now.strftime("%I:%M:%S") + "------------------- Socket Thread Started"
+      # Rails.logger.debug Time.now.strftime("%I:%M:%S") + "------------------- Socket Thread Started"
 
       socket = nil
       loop do
@@ -27,7 +27,7 @@ private
             break if ( line_read && line_read.include?('</Journal>') )
             if socket.eof?
               sleep 0.2
-              # puts "sleeping"
+              puts "sleeping"
               next
             end
           end
@@ -51,17 +51,19 @@ private
             when "5" ##### vdu
           end
 
-          Rails.logger.debug Time.now.strftime("%I:%M:%S") + " ------------------- Socket Thread Running"
+          # Rails.logger.debug Time.now.strftime("%I:%M:%S") + " ------------------- Socket Thread Running"
 
         rescue EOFError, IOError, Errno::ECONNRESET, Errno::ECONNREFUSED, SocketError  => e
-          Rails.logger.error "Socket Thread #{ e.class } - Exception Message: #{ e.message }\nReopening connection to posdriver after #{ e.class }"
+          # Rails.logger.error "Socket Thread #{ e.class } - Exception Message: #{ e.message }\nReopening connection to posdriver after #{ e.class }"
           socket.close unless socket.nil?
-          sleep Rails.env.production? ? 12.0 : 3.0
+          # sleep Rails.env.production? ? 12.0 : 3.0
+          sleep 12.00
           socket = nil
           next
         rescue StandardError => e
-          Rails.logger.error "terminal_generic loop error - Socket Thread #{ e.class } - Exception #{ e.class } Message: #{ e.message }"
-          sleep Rails.env.production? ? 12.0 : 1.0
+          # Rails.logger.error "terminal_generic loop error - Socket Thread #{ e.class } - Exception #{ e.class } Message: #{ e.message }"
+          # sleep Rails.env.production? ? 12.0 : 1.0
+          sleep 12.0
           next
         end
       end
