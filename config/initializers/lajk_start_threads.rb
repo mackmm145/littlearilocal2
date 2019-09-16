@@ -10,18 +10,22 @@ TCPClientForXMLJournal.new( q )
 DisplayServer.new( q, 0 )
 
 Thread.new do
-  loop do
-    begin
-      logger.debug Time.now
-      if Time.now.hour > 10
-        sleep 10 * 60
-        logger.debug "Running Flash Report"
-        FlashReport.new
-      else
-        sleep 60 * 60
-      end
-    rescue
+  Rails.application.executor.wrap do
+    loop do
+      begin
+        puts Time.now
+        if true #Time.now.hour > 10
+          # logger.debug "Running Flash Report"
+          FlashReport.new
+          sleep 10 * 60
+        else
+          sleep 60 * 60
+        end
+      rescue StandardError => e
+        sleep 5 * 60
+        puts e.message
 
+      end
     end
   end
 end
