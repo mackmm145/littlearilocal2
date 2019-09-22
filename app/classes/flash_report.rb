@@ -18,16 +18,19 @@ class FlashReport
     SC_DIR = ""
   end
   @data
-
+  @times_run
 
   def initialize
-    @data = { auth_token: ENV['auth_token'], hrsales: [] }
+    Thread.new do
+      @times_run = 0
+      @data = { auth_token: ENV['auth_token'], hrsales: [] }
+      clear_altdbf
+      create_dbf_file
 
-    create_dbf_file
+      read_dbf_file
 
-    read_dbf_file
-
-    upload_data
+      upload_data
+    end
   end
 
 private
@@ -90,13 +93,17 @@ private
     agent.page.forms[0]["user[username]"] = ENV["AP2_USERNAME"]
     agent.page.forms[0]["user[password]"] = ENV["AP2_PASSWORD"]
     agent.page.forms[0].submit
-    puts "logged in"
+    # puts "logged in"
+    # puts @data.to_yaml
     response = agent.post(IP_ADDRESS + "pages/test_api.json", @data.to_json, {'Content-Type' => 'application/json'})
     puts "json sent"
     puts agent.page.inspect
 
     agent.delete IP_ADDRESS + "users/sign_out.json"
-    puts "logged out"
+    # puts "logged out"
+    @times_run += 1
+    puts "times run: " + @times_run.to_s + " @ " + Time.now.to_s
+    
   end
 
 end

@@ -14,6 +14,8 @@ class ParseJournalStream
   end
 
   def command( term_num, stream_hash )
+    puts term_num
+    puts stream_hash
     case stream_hash.dig( "Journal", "JournalEntry", "FunctionNumber" )
       when "1" # log in
         puts "Log In"
@@ -38,7 +40,12 @@ class ParseJournalStream
               item_number = stream_hash.dig( "Journal", "JournalEntry", "ItemNumber" )
               noodle_items = [ '2603', '2604' ] ##probably need to put other items here.
               if noodle_items.include?( item_number )
-                CustomerDisplayChannel.broadcast_to (term_num.to_i + 1).to_s, display_state: "ramen_toppings", state: @state
+                ###
+                ##
+                ###
+                ##### this controls the switch to the ramen ingredients
+                ##### 
+                #CustomerDisplayChannel.broadcast_to (term_num.to_i + 1).to_s, display_state: "ramen_toppings", state: @state
               end
             end
         end
@@ -48,7 +55,7 @@ class ParseJournalStream
         end
       when "8" # send
         puts "send"
-        @state = :login_screen
+        @state = :payment_screen
       when "11" # close check
         puts "close check"
         @state = :login_screen

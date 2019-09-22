@@ -4,42 +4,31 @@ class DisplayServer
   def initialize( q, term_num )
     term_num = term_num.to_i
     @@parser ||= {}
-
+    @q = q
     if @@parser[ term_num ].nil?
       @@parser[ term_num ] = ParseJournalStream.new
-      spawn_display_server( q, term_num )
+      puts  "spawn_display_server( #{term_num} )"
+      spawn_display_server( @q, term_num )
     end
   end
 
 private
   def spawn_display_server( q, term_num )
-    term_num = term_num
+    
     Thread.new do
       Thread.current.thread_variable_set( :thread_type, :customer_display )
       Thread.current.thread_variable_set( :term_num,  term_num )
       loop do
         begin
-          @@parser[ term_num ].command( term_num, q[ :display ][ term_num ].pop )
+          aaa = @q[ :display ][ term_num ].pop
+          @@parser[ term_num ].command( term_num, aaa )
           begin
-            puts "parser popped"
-            doc = Nokogiri::XML(""); retries = 0
+            puts "queue popped for terminal #{ term_num + 1 }"
+            doc = Nokogiri::XML("")
             begin
-              unless IN_DEVELOPMENT
                 FileUtils.cp( "C:\\lajk\\OC#{ term_num }.XML", 'L:/sc/XML/REQUESTS_IN_LAJK' )
                 sleep 0.1
                 doc = File.open('L:/sc/XML/OPENCHECKS_LAJK/' + "OC#{ term_num }.XML") { |f| Nokogiri::XML(f) }
-              else
-                source = "<OpenChecks>
-                            <Check>
-                              <CheckHeader><CheckTotal>#{ rand(10) }.00</CheckTotal></CheckHeader>
-                              <ItemDetail>
-                                <ItemName>SDFSDF</ItemName>
-                                <FullPrice>#{ rand( 8 ) }.00</FullPrice>
-                              </ItemDetail>
-                            </Check>
-                          </OpenChecks>"
-                doc = Nokogiri::XML source
-              end
             rescue StandardError => e
               sleep (retries += 1 ) < 20 ? 0.1 : 2.0
               puts "inner loop error #{ e.message }"
@@ -49,13 +38,12 @@ private
             puts "outer loop error"
           end
           puts "preparing message broadcast"
-          puts doc.at_css('CheckHeader CheckTotal')
-          puts parsed_check( doc )
-          puts check_total( doc )
-          puts "sdfdsfsdfsdfsdfsdfewfnwefoewfouwenfowenofnoefwn"
-          puts term_num
+          # puts doc.at_css('CheckHeader CheckTotal')
+          # puts parsed_check( doc )
+          # puts check_total( doc )
+          # puts term_num
           PositouchChannel.broadcast_to term_num + 1, check: parsed_check( doc ), check_total: check_total( doc )
-          puts "message broadcasted"
+          puts "message broadcasted @ " + Time.now.to_s
         rescue Exception => e
           puts "terminal display loop error - display thread - nonStandard Error #{ e.class } - Exception Message: #{ e.message }"
           next

@@ -48,7 +48,7 @@ private
           if @@run_until > Time.now
             sleep 0.2
             FileUtils.cp( "C:\\lajk\\OC#{ term_num }.XML", 'L:/sc/XML/REQUESTS_IN_LAJK' )
-
+            puts "SDFWEIRWOIEROI@#I)(@U#)($@#$)R)WEJFJWEFH_@(#)(@U#$)(U@#($U(@#U$(_@#U$(U@#)$(U#@)$"
             begin
               retries ||= 0
               logger.debug "about to file.open for nokogiri"
