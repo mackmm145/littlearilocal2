@@ -1,5 +1,5 @@
 
-puts Rails.root.join("app", "channels", "customer_display_channel")
+# puts Rails.root.join("app", "channels", "customer_display_channel")
 require Rails.root.join("app", "channels", "customer_display_channel")
 
 class ParseJournalStream
@@ -14,7 +14,7 @@ class ParseJournalStream
   end
 
   def command( term_num, stream_hash )
-    puts term_num
+    # puts term_num
     puts stream_hash
     case stream_hash.dig( "Journal", "JournalEntry", "FunctionNumber" )
       when "1" # log in
@@ -70,7 +70,7 @@ class ParseJournalStream
     end
 
     ##broadcast changes to term_num customer_display
-    puts @state
+    # puts @state
     case @state
       when :item_entry_ramen
         ##broadcast to switch to by request screen

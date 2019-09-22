@@ -22,18 +22,15 @@ private
 
           loop do
             line_read = socket.gets
-            print line_read unless line_read.blank?
+            # print line_read unless line_read.blank?
             lines_read += line_read if line_read
             break if ( line_read && line_read.include?('</Journal>') )
+            # puts "socket.eof: " + socket.eof.to_s
             socket.eof?
           end
 
-          puts "parsing stream..."
+          puts "parsing stream"
           if lines_read.include?( "<Journal>" )
-            # open( "c:\\lajk\\xml.txt", "a") { | f |
-            #   f.puts lines_read  
-            # }
-            
             begin
             stream_hash = Hash.from_xml(lines_read)
             stream_json = stream_hash.to_json
@@ -48,10 +45,12 @@ private
               when "0" ##### terminal 1
                 puts "output to pos1"
                 # puts stream_hash
+                sleep 0.2
                 q[ :display ][ 0 ] << stream_hash
               when "1" ##### terminal 2
                 puts "output to pos2"
                 # puts stream_hash
+                sleep 0.2
                 q[ :display ][ 1 ] << stream_hash
               when "5" ##### vdu
             end
