@@ -7,18 +7,27 @@ loop do
     if Time.now.hour > 10
       
       fr.run
-      print "hibernating for 60 seconds"
+      print "hibernating for 5 minutes"
       60.times do
-        sleep 1
         print "."
-        Thread.pass
+        5.times do
+          sleep 1
+          Thread.pass
+        end
       end
       puts "."
     else
-      sleep 60 * 60
+      print "hibernating until 11am"
+      while Time.now.hour > 10 do
+        (60 * 60).times do
+          sleep 1; Thread.pass
+        end
+      end
     end
   rescue StandardError => e
     puts e.message
-    sleep 5 * 60
+    300.times do
+      sleep 1; Thread.pass
+    end
   end #begin
 end #loop
