@@ -11,14 +11,13 @@ loop do
       60.times do
         print "."
         5.times do
-          sleep 1
-          Thread.pass
+          sleep 1; Thread.pass
         end
       end
       puts "."
     else
       print "hibernating until 11am"
-      while Time.now.hour > 10 do
+      while Time.now.hour <= 10 do
         (60 * 60).times do
           sleep 1; Thread.pass
         end

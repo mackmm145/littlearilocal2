@@ -184,7 +184,6 @@ def create_dbf_file
         retry
       end
     end
-    puts item_sales.to_yaml
     puts "completed"
   end
 

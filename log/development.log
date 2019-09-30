@@ -15006,3 +15006,29 @@ Processing by PagesController#terminal1 as */*
 Completed 200 OK in 0ms
 
 
+Started GET "/posi1" for ::1 at 2019-09-29 22:54:24 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (1151.3ms)
+Completed 200 OK in 1354ms (Views: 1353.3ms)
+
+
+Started GET "/cable" for ::1 at 2019-09-29 22:54:25 -0400
+Started GET "/terminal1" for ::1 at 2019-09-29 22:54:25 -0400
+Processing by PagesController#terminal1 as */*
+Completed 200 OK in 0ms
+
+
+Started GET "/posi1" for ::1 at 2019-09-29 22:54:43 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 104ms (Views: 103.5ms)
+
+
+Started GET "/terminal1" for ::1 at 2019-09-29 22:54:43 -0400
+Started GET "/cable" for ::1 at 2019-09-29 22:54:43 -0400
+Processing by PagesController#terminal1 as */*
+Completed 200 OK in 1ms
+
+
