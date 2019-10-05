@@ -25,18 +25,18 @@ class FlashReport
       
   end
 
-  def run
+  def run( days_ago = 0 )
     @data = { auth_token: ENV['auth_token'], hrsales: [] }
     clear_altdbf
-    if create_dbf_file
-        read_dbf_file
-        upload_data
-      end
+    if create_dbf_file( days_ago )
+      read_dbf_file( days_ago )
+      upload_data
+    end
   end
 
 private
 
-def create_dbf_file
+def create_dbf_file( days_ago )
   print "generating hourly sales report..."
   times_run = 1
   begin
@@ -45,7 +45,7 @@ def create_dbf_file
     Dir.chdir( "l:\\sc" )
     system( "killproc posidbf")
     system( "killproc invdbf")
-    system( "runwait posidbf /ALT 0 0 /f HRSALES MITEMS FCOSTN")
+    system( "runwait posidbf /ALT #{ days_ago } /f HRSALES MITEMS FCOSTN")
     # system( "runwait invdbf /ALT /f MENUITEM")
       
     rescue Exception => e
@@ -92,23 +92,23 @@ def create_dbf_file
     puts "completed"
   end
 
-  def read_dbf_file
+  def read_dbf_file( days_ago )
     @data = { auth_token: ENV["auth_token"], hrsales: [], inv_names: [] }
-    read_flash_report
-    read_item_sales
+    read_flash_report( days_ago )
+    read_item_sales( days_ago )
   end
 
-  def read_flash_report
+  def read_flash_report( days_ago )
     print "reading flash report..."
     times_run = 1
     begin
       system( "L:")
-      today_string = DateTime.now.strftime("%Y-%m-%d")
+      today_string = ( Date.today - ( days_ago || 0 ) ).strftime("%Y-%m-%d")
+      # today_string = Date.today.strftime("%Y-%m-%d")
       hourly_sales = []
 
         hrsales_table = DBF::Table.new( DBF_DIR + "hrsales.dbf")
         hrsales_table.each do | record |
-        # if record.attributes.date
         if record.attributes["DATE"].to_s == today_string
           sales_record = {}
           sales_record[ :date ] = record.attributes[ "DATE" ].to_s
@@ -138,7 +138,7 @@ def create_dbf_file
     puts "completed"
   end
 
-  def read_item_sales
+  def read_item_sales( days_ago )
     print "reading item_sales..."
     times_run = 1
     begin

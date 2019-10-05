@@ -15032,3 +15032,16 @@ Processing by PagesController#terminal1 as */*
 Completed 200 OK in 1ms
 
 
+Started GET "/posi2" for 10.99.10.2 at 2019-09-29 23:07:49 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (180.6ms)
+Completed 200 OK in 252ms (Views: 251.8ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-09-29 23:07:49 -0400
+Started GET "/terminal2" for 10.99.10.2 at 2019-09-29 23:07:49 -0400
+Processing by PagesController#terminal2 as */*
+Completed 200 OK in 0ms
+
+

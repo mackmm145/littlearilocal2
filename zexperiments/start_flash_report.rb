@@ -4,7 +4,7 @@ fr = FlashReport.new
 loop do
   begin
     puts ""; puts Time.now
-    if Time.now.hour > 10
+    if Time.now.hour > 10 && Time.now.hour < 22
       
       fr.run
       print "hibernating for 5 minutes"
@@ -17,7 +17,7 @@ loop do
       puts "."
     else
       print "hibernating until 11am"
-      while Time.now.hour <= 10 do
+      while Time.now.hour <= 10 || Time.now.hour >= 22 do
         (60 * 60).times do
           sleep 1; Thread.pass
         end

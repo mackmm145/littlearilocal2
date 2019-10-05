@@ -45,7 +45,7 @@ class ParseJournalStream
                 ###
                 ##### this controls the switch to the ramen ingredients
                 ##### 
-                #CustomerDisplayChannel.broadcast_to (term_num.to_i + 1).to_s, display_state: "ramen_toppings", state: @state
+                CustomerDisplayChannel.broadcast_to (term_num.to_i + 1).to_s, display_state: "ramen_toppings", state: @state
               end
             end
         end

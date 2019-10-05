@@ -29,7 +29,7 @@ private
             socket.eof?
           end
 
-          puts "parsing stream"
+          # puts "parsing stream"
           if lines_read.include?( "<Journal>" )
             begin
             stream_hash = Hash.from_xml(lines_read)
@@ -38,17 +38,17 @@ private
               puts "Failed: #{ ex.message }"
             end
           end
-          puts stream_json if stream_json
+          # puts stream_json if stream_json
           
           if stream_hash
             case stream_hash.dig( "Journal", "JournalEntry", "DeviceNumber" )
               when "0" ##### terminal 1
-                puts "output to pos1"
+                # puts "output to pos1"
                 # puts stream_hash
                 sleep 0.2
                 q[ :display ][ 0 ] << stream_hash
               when "1" ##### terminal 2
-                puts "output to pos2"
+                # puts "output to pos2"
                 # puts stream_hash
                 sleep 0.2
                 q[ :display ][ 1 ] << stream_hash

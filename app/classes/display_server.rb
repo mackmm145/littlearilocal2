@@ -23,6 +23,7 @@ private
         begin
           aaa = @q[ :display ][ term_num ].pop
           @@parser[ term_num ].command( term_num, aaa )
+          Thread.pass
           begin
             puts "Waking parser for terminal #{ term_num + 1 }" 
             doc = Nokogiri::XML("")
@@ -42,15 +43,17 @@ private
                 if num_tries == 1
                   print e.message
                 else
-                  print "."
+                  # print "."
                 end
-                sleep 0.2
+                sleep 0.1
+                Thread.pass
                 retry
               end
               print "\n"
               File.delete(response_file_name) if File.exist?(response_file_name)
             rescue StandardError => e
               sleep (retries += 1 ) < 20 ? 0.1 : 2.0
+              Thread.pass
               puts "inner loop error #{ e.message }"
               retry if retries < ( IN_DEVELOPMENT ? 3 : 40 )
             end
