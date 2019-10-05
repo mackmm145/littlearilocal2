@@ -22,7 +22,7 @@ class FlashReport
 
   def initialize
       @times_run = 0
-      
+
   end
 
   def run( days_ago = 0 )
@@ -47,7 +47,7 @@ def create_dbf_file( days_ago )
     system( "killproc invdbf")
     system( "runwait posidbf /ALT #{ days_ago } /f HRSALES MITEMS FCOSTN")
     # system( "runwait invdbf /ALT /f MENUITEM")
-      
+
     rescue Exception => e
       print " error detected: "
       puts e.message
@@ -67,7 +67,7 @@ def create_dbf_file( days_ago )
     end
     puts "completed"
   end
-  
+
   def clear_altdbf
     print "clearing previous records..."
     times_run = 1
@@ -75,7 +75,7 @@ def create_dbf_file( days_ago )
       Dir.glob( DBF_DIR.gsub('\\','/') + "*.DBF").entries.each do |f|
         FileUtils.rm f
       end
-    
+
       Dir.glob( DBF_DIR.gsub('\\','/') + "*.CDX").entries.each do |f|
         FileUtils.rm f
       end
@@ -118,7 +118,7 @@ def create_dbf_file( days_ago )
         end
       end
       hrsales_table.close
-      
+
       ( 0..48 ).each do | hour |
         this_hour = hourly_sales.find_all{ | h | h[ :hour ] == hour }
         if this_hour.count > 0
@@ -145,6 +145,7 @@ def create_dbf_file( days_ago )
       system( "L:")
       inv_names = []
       item_sales = []
+      today_string = ( Date.today - ( days_ago || 0 ) ).strftime("%Y-%m-%d")
 
       inv_names_table = DBF::Table.new( DBF_DIR + "fcostn.dbf")
       inv_names_table.each do | record |
@@ -160,20 +161,21 @@ def create_dbf_file( days_ago )
       item_sales_table = DBF::Table.new( DBF_DIR + "mitems.dbf")
       item_sales_table.each do | record |
         item_sale = {}
+        item_sale[ :date ] = today_string
         item_sale[ :inv_num ] = record.attributes[ "INV_NUM" ].to_s
         item_sale[ :inv_count ] = record.attributes[ "COUNTS" ]
         inv_name = inv_names.detect{ |i| i[:inv_num] == item_sale[ :inv_num ]  }
         if inv_name
           item_sale[ :inv_name ] = inv_name[ :inv_name ]
-          item_sale[ :major ] = inv_name[ :major ] 
+          item_sale[ :major ] = inv_name[ :major ]
           item_sale[ :minor ] = inv_name[ :minor ]
         end
         item_sales << item_sale
       end
       item_sales_table.close
-      
+
       @data[ :item_sales ] = item_sales
-        
+
     rescue Exception => e
       puts e.message
       times_run += 1
@@ -208,7 +210,7 @@ def create_dbf_file( days_ago )
       # puts @data.to_yaml
       response = agent.post(IP_ADDRESS + "pages/test_api.json", @data.to_json, {'Content-Type' => 'application/json'})
       agent.delete IP_ADDRESS + "users/sign_out.json"
-      
+
       puts "completed"
       @times_run += 1
       puts "times run: " + @times_run.to_s + " @ " + Time.now.to_s
