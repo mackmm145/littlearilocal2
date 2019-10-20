@@ -1,2 +1,5 @@
 tmp/
 log/
+node_modules/
+config/master.key
+public/assets
