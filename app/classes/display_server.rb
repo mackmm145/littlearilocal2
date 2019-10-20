@@ -61,9 +61,9 @@ private
           #   puts "outer loop error: #{ e.class}: #{ e.message }"
           #   puts $!.backtrace
           # end
-          print "preparing to broadcast..."
-          PositouchChannel.broadcast_to term_num + 1, check: parsed_check( doc ), check_total: check_total( doc )
-          puts "message broadcasted @ " + Time.now.to_s
+          # print "preparing to broadcast..."
+          # PositouchChannel.broadcast_to term_num + 1, check: parsed_check( doc ), check_total: check_total( doc )
+          # puts "message broadcasted @ " + Time.now.to_s
         rescue Exception => e
           puts "terminal display loop error - display thread - nonStandard Error #{ e.class } - Exception Message: #{ e.message }"
           next
