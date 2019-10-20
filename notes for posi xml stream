@@ -110,6 +110,13 @@ function#
     UserNumber
     Drawer
       1
+28 CashOut
+    BusinessDate, TransactionDate, TransactionTime
+    FunctionNumber (28)
+    DeviceNumber
+    UserNumber
+    TypeOfCashOut
+    
 
 29 bump?
     BusinessDate, TransactionDate, TransactionTime

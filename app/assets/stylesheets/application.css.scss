@@ -15,6 +15,13 @@
  *= require_self
  */
 
+ @font-face {  
+  font-family: 'Falling Sky';  
+  src: url(font-path('FallingSky'));
+  font-weight: normal;  
+  font-style: normal;  
+}  
+
 
 body {
   background-color: #F3E5D7;
@@ -172,12 +179,13 @@ body {
 }
 
 .ramen-title {
-  margin: 20px 0px 0 30px;
+  margin: 8px 0px 0 30px;
   width: 650px !important;
   font-size: 30px;
   color: #5B4B38;
   font-weight: bold;
   border-bottom: 2px solid #4B3B28;
+  font-family: "Falling Sky";
 }
 
 .ramen-items-container {
@@ -200,27 +208,34 @@ body {
 }
 
 .ramen-item {
-  margin: 6px;
-  height: 90px;
-  width: 200px;
-  border-radius: 8px;
-  background-color: rgb(117, 77, 53);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 2px;
+  height: 80px;
+  width: 316px;
+  border-radius: 2px;
+  background-color: #dfd2c3;
+  border: 2px solid rgb(114, 97, 74);
   bottom: 30px;
-  color: white;
-  font-size: 20px;
+  color: #5B4B38;
+  font-size: 23px;
   text-align: center;
-  box-shadow: 1px 1px 1px rgb(20, 14, 10);
+  /* box-shadow: 3px 3px 3px rgb(114, 97, 74); */
   display:flex;
-  flex-flow: column wrap;
+  color: #5B4B38;
+  font-weight: bold;
+  line-height: 22px;
 }
 
 .ramen-item-selected {
-  background-color: rgb(61, 50, 36);
+  background-color: #dfd2c3;
+  box-shadow: none;
+  margin: 2px;
+  /* box-shadow: -2px -2px 2px rgb(70, 59, 45); */
 }
 
 
 .ramen-request-item-price {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .ramen-item-inner {
@@ -228,9 +243,8 @@ body {
 }
 
 .ramen-item-descriptor1 {
-  border-bottom: 1px solid #f3e6d6;
-  color: #f3e6d6;
-  font-weight: bold;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
+  /* border-bottom: 1px solid #5B4B38; */
+  
+  /* padding-bottom: 5px; */
+  /* margin-bottom: 5px; */
 }

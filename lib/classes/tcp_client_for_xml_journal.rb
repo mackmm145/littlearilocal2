@@ -11,29 +11,45 @@ private
   def spawn_socket_thread( q )
     return Thread.new do
       Thread.current.thread_variable_set( :thread_type, :socket )
-      # Rails.logger.debug Time.now.strftime("%I:%M:%S") + "------------------- Socket Thread Started"
 
       socket = nil
       loop do
         begin
-          lines_read = ""
+          
           socket ||= TCPSocket.open(TCP_SOCKET_ADDRESS, TCP_SOCKET_PORT)
           stream_hash = nil; stream_json = nil
-
+          lines_read = ""
           loop do
+            Thread.pass
             line_read = socket.gets
-            # print line_read unless line_read.blank?
+            line_read.gsub!("\u0000", "") if line_read
+            # print line_read  unless line_read.blank? || line_read.include?( '<OutOfStock>' )
             lines_read += line_read if line_read
-            break if ( line_read && line_read.include?('</Journal>') )
-            # puts "socket.eof: " + socket.eof.to_s
-            socket.eof?
+            
+            if line_read.include?('<OutOfStock>')
+              loop do
+                line_read = socket.gets
+                if line_read.include?( '</OutOfStock>' ) || socket.eof
+                  lines_read = ""
+                  break
+                end
+              end  
+              next
+            end
+            
+            break if ( line_read && (line_read.include?('</Journal>') ) )
+
+            if socket.eof
+              socket.close;socket=nil;
+              # puts "sock eof, breaking out"
+              break;
+            end
           end
 
-          # puts "parsing stream"
           if lines_read.include?( "<Journal>" )
             begin
             stream_hash = Hash.from_xml(lines_read)
-            stream_json = stream_hash.to_json
+            # stream_json = stream_hash.to_json
             rescue REXML::ParseException => ex
               puts "Failed: #{ ex.message }"
             end
@@ -43,14 +59,14 @@ private
           if stream_hash
             case stream_hash.dig( "Journal", "JournalEntry", "DeviceNumber" )
               when "0" ##### terminal 1
-                # puts "output to pos1"
+                puts "output to pos1"
                 # puts stream_hash
-                sleep 0.2
+                # sleep 0.2
                 q[ :display ][ 0 ] << stream_hash
               when "1" ##### terminal 2
-                # puts "output to pos2"
+                puts "output to pos2"
                 # puts stream_hash
-                sleep 0.2
+                # sleep 0.2
                 q[ :display ][ 1 ] << stream_hash
               when "5" ##### vdu
             end

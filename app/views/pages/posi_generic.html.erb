@@ -3,19 +3,9 @@
   <div id=total>Total:  0.00</div>
 </div>
 <div class="image-blurbs main-container">
-  <div class="toggle-image first-image">
-    <%= image_tag "rotating/little_ari_register_back1.jpg" %>
-  </div>
-
-  <div class="toggle-image second-image">
-    <%= image_tag "rotating/little_ari_register_back2.jpg" %>
-  </div>
-
-  <div class="toggle-image third-image">
-    <%= image_tag "rotating/little_ari_register_back3.jpg" %>
-  </div>
-  <div class="toggle-image fourth-image show">
-    <%= image_tag "rotating/little_ari_register_back-new_items-beef_curry.jpg" %>
+  <div id="toggler">
+    <%= image_tag "rotating/little_ari_register_back-new_items-little_ari_soup.jpg" %>
+    <%= image_tag "rotating/little_ari_register_back-new_items-beef_curry.jpg", class: :top %>
   </div>
 </div>
 <div class="ramen-container main-container">
@@ -23,16 +13,14 @@
     Ramen - Standard Toppings
   </div>
   <div class="ramen-request-items ramen-items-container">
-    <div id="moyashi" class="ramen-item">
+    <div id="moyashi" class="ramen-item ramen-item-selected">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Moyashi</div>
-        <div>Bean Sprouts</div>
+        <div class="ramen-item-descriptor1">もやし / Bean Sprout</div>
       </div>
     </div>
-    <div id="negi" class="ramen-request-items ramen-item">
+    <div id="negi" class="ramen-item ramen-item-selected">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Negi</div>
-        <div>Green Onions</div>
+        <div class="ramen-item-descriptor1">ネギ / Green Onion</div>
       </div>
     </div>
   </div>
@@ -42,44 +30,47 @@
   <div class="ramen-request-items ramen-items-container">
     <div id="spicy-paste" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Gekikara</div>
-        <div>Spicy <span class="ramen-request-item-price">(+1.00)</span></div>
+        <div class="ramen-item-descriptor1">激辛ペースト / Spicy Paste</br>
+        <span class="ramen-request-item-price">+1.00</span></div>
       </div>
     </div>
-    <div id="nori" class="ramen-item">
+    <div id="nori" class="ramen-item ramen-item-selected">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Nori</div>
-        <div>Seaweed Paper</div>
+        <div class="ramen-item-descriptor1">海苔 / Nori / Seaweed</div>
       </div>
     </div>
     <div id="iri-goma" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Iri Goma</div>
-        <div>Sesame Seeds</div>
+        <div class="ramen-item-descriptor1">ごま / Sesame Seed</div>
       </div>
     </div>
     <div id="menma" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Menma</div>
-        <div>Bamboo Shoots</div>
+        <div class="ramen-item-descriptor1">シナチク / Bamboo Shoot</br>
+        <span class="ramen-request-item-price">+0.25</span></div>
       </div>
     </div>
     <div id="beni-shoga" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Beni Shoga</div>
-        <div>Pickled Ginger</div>
+        <div class="ramen-item-descriptor1">紅生姜 / Pickled Ginger</br>
+        <span class="ramen-request-item-price">+0.25</span></div>
       </div>
     </div>
     <div id="naruto" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Naruto</div>
-        <div>Fish Cake</div>
+        <div class="ramen-item-descriptor1">ナルト / Naruto / Fish Cake</br>
+        <span class="ramen-request-item-price">+0.25</span></div>
       </div>
     </div>
     <div class="ramen-item">
       <div id="negi-abura" class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">Negi Abura</div>
-        <div>Green Onion Oil</div>
+        <div class="ramen-item-descriptor1">ネギ油 / Green Onion Oil</div>
+      </div>
+    </div>
+    <div class="ramen-item">
+      <div id="negi-abura" class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">味付け玉子 / Marinated Egg</br>
+        <span class="ramen-request-item-price">+0.50</span></div>
       </div>
     </div>
   </div>
@@ -92,9 +83,14 @@
   App.cable = ActionCable.createConsumer();
 
   $(document).ready(function(){
+    if ( <%= @test %>==true ) {
+    $('.main-container').hide()
+    $('.ramen-container').show()
+    } else {
     $('.main-container').show()
     // $('.main-container').hide()
     $('.ramen-container').hide()
+    }
 
     App.terminalChannel = App.cable.subscriptions.create( { channel: 'PositouchChannel', terminal: '<%= @term_num.to_s %>' }, {
       connected: function() {
@@ -124,25 +120,25 @@
 
       },
       received: function( response ) {
-        console.log( response[ 'display_state' ] + " : " + response['state'] )
-        $('.main-container').hide()
-        switch( response[ 'display_state' ] ) {
-          case 'ramen_toppings':
-            $('.ramen-container').show()
-            break
-          case 'image_blurbs':
-            $('.image-blurbs').show()
-            break
+        console.log( "[" + response[ 'display_state' ] + ":" + response['state'] + ']' )
+        // $('.main-container').hide()
+        if ( <%= @test %> != true ) {
+          switch( response[ 'display_state' ] ) {
+            case 'ramen_toppings':              
+              $('.image-blurbs').hide()
+              $('.ramen-container').show()
+              break
+            case 'image_blurbs':
+              $('.ramen-container').hide()
+              $('.image-blurbs').show()
+              break
+          }
         }
       },
       disconnected: function() {
         console.log( "disconnected from customer display" )
       }
     });
-
-    $.get( "/terminal<%= @term_num.to_s %>");
-    $imageEls = $('.toggle-image');
-    var index = 0;
 
     // setInterval(function () {
     //   index = index + 1 < $imageEls.length ? index + 1 : 0;
@@ -153,3 +149,39 @@
 
 }).call(this);
 </script>
+
+<style>
+@keyframes togglerFadeInOut {
+  0% { opacity: 1; }
+  45% { opacity:1; }
+  55% { opacity:0; }
+  100% { opacity:0; }
+}
+
+#toggler {
+  left: 0;
+  position: relative;
+}
+
+#toggler img {
+  position: absolute;
+  left: 285px;
+}
+
+#toggler img.top {
+  position:absolute;
+  left:285px;
+  animation-name: togglerFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-direction: alternate;
+}
+
+/* #toggler img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+#toggler img:nth-of-type(2) {
+  animation-delay: 2s;
+} */
+</style>

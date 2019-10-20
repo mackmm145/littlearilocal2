@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/posi2', :to => 'pages#posi2'
   get '/terminal1', :to => 'pages#terminal1'
   get '/terminal2', :to => 'pages#terminal2'
+  get '/testpage', :to => 'pages#testpage'
 
   get '/customer_display', :to => 'pages#customer_display'
 

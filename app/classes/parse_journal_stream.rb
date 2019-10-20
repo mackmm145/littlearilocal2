@@ -15,7 +15,7 @@ class ParseJournalStream
 
   def command( term_num, stream_hash )
     # puts term_num
-    puts stream_hash
+    # puts stream_hash
     case stream_hash.dig( "Journal", "JournalEntry", "FunctionNumber" )
       when "1" # log in
         puts "Log In"
@@ -45,7 +45,9 @@ class ParseJournalStream
                 ###
                 ##### this controls the switch to the ramen ingredients
                 ##### 
+                puts "getting read to broadcast to customer display"
                 CustomerDisplayChannel.broadcast_to (term_num.to_i + 1).to_s, display_state: "ramen_toppings", state: @state
+                puts "finished broadcasting to broadcast to customer display"
               end
             end
         end
@@ -82,6 +84,8 @@ class ParseJournalStream
         CustomerDisplayChannel.broadcast_to (term_num.to_i+1).to_s, { display_state: "image_blurbs", state: @state }
         ##broadcast to switch to info screen
     end
+
+    # puts @state.to_s
   end
 
 private

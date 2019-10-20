@@ -6,7 +6,10 @@ require 'yaml'
 require 'mechanize'
 require 'open-uri'
 
+
+
 class FlashReport
+
 
   if ENV[ "computer_location" ]  == "lajk"
     IP_ADDRESS = "https://arigatoportal2.net/"
@@ -19,10 +22,10 @@ class FlashReport
   end
   @data
   @times_run
+  @response = "no response"
 
   def initialize
-      @times_run = 0
-
+    @times_run = 0
   end
 
   def run( days_ago = 0 )
@@ -32,6 +35,10 @@ class FlashReport
       read_dbf_file( days_ago )
       upload_data
     end
+  end
+
+  def response
+    @response
   end
 
 private
@@ -197,6 +204,8 @@ def create_dbf_file( days_ago )
     @data.to_json
   end
 
+ 
+
   def upload_data
     print "uploading to arigatoportal..."
     times_run = 1
@@ -208,9 +217,11 @@ def create_dbf_file( days_ago )
       agent.page.forms[0].submit
       # puts "logged in"
       # puts @data.to_yaml
-      response = agent.post(IP_ADDRESS + "pages/test_api.json", @data.to_json, {'Content-Type' => 'application/json'})
+      response = agent.post(IP_ADDRESS + "pages/upload_hrsales.json", @data.to_json, {'Content-Type' => 'application/json'})
+      response = agent.post(IP_ADDRESS + "pages/upload_item_sales.json", @data.to_json, {'Content-Type' => 'application/json'})
       agent.delete IP_ADDRESS + "users/sign_out.json"
-
+      puts @data
+      @response = response
       puts "completed"
       @times_run += 1
       puts "times run: " + @times_run.to_s + " @ " + Time.now.to_s
