@@ -1,5 +1,5 @@
 tmp/*.*
-log/
-node_modules/
+log/*.*
+node_modules/*.*
 config/master.key
 public/assets
