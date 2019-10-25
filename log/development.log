@@ -20239,3 +20239,146 @@ Completed 200 OK in 74ms (Views: 73.3ms)
 
 
 Started GET "/cable" for 127.0.0.1 at 2019-10-20 19:28:23 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 19:35:09 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 19:35:09 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (291.0ms)
+Completed 500 Internal Server Error in 335ms
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (c:/lajk/littlearilocal2/tmp/cache/assets/sprockets/v3.0/G_/G_WxaAX2shkVX6yVxh8tyrAX4qc6JY8rWQA6v_Dbm-A.cache.94959640.4344.119904, c:/lajk/littlearilocal2/tmp/cache/assets/sprockets/v3.0/G_/G_WxaAX2shkVX6yVxh8tyrAX4qc6JY8rWQA6v_Dbm-A.cache)):
+    4: </div>
+    5: <div class="image-blurbs main-container">
+    6:   <div id="toggler">
+    7:     <%= image_tag "rotating/little_ari_register_back-new_items-little_ari_soup.jpg" %>
+    8:     <%= image_tag "rotating/little_ari_register_back-new_items-beef_curry.jpg", class: :top %>
+    9:   </div>
+   10: </div>
+  
+app/views/pages/posi_generic.html.erb:7:in `_app_views_pages_posi_generic_html_erb__688002317_58452200'
+app/controllers/pages_controller.rb:26:in `posi2'
+  Rendered pages/posi_generic.html.erb within layouts/application (2155.6ms)
+Completed 200 OK in 2281ms (Views: 2281.2ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 19:35:12 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 19:35:13 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 87ms (Views: 86.8ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 19:35:14 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 19:35:30 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 55ms (Views: 55.0ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 19:35:31 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 19:37:02 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 19:37:02 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 19:37:02 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (281.4ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (230.6ms)
+Completed 500 Internal Server Error in 385ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__984081096_95776540'
+app/controllers/pages_controller.rb:26:in `posi2'
+Completed 200 OK in 458ms (Views: 458.0ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 19:37:03 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 19:37:11 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 79ms (Views: 78.7ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 19:37:11 -0400
+Started GET "/testpage" for 127.0.0.1 at 2019-10-25 19:42:03 -0400
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 74ms (Views: 73.9ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2019-10-25 19:42:04 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 19:42:08 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 19:42:08 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (30.2ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 100ms (Views: 99.7ms)
+
+
+Completed 200 OK in 129ms (Views: 128.4ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 19:42:09 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 19:42:09 -0400
+Started GET "/testpage" for 127.0.0.1 at 2019-10-25 19:42:11 -0400
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 65ms (Views: 64.5ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2019-10-25 19:42:11 -0400
+Started GET "/testpage" for 127.0.0.1 at 2019-10-25 19:42:12 -0400
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 62ms (Views: 62.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2019-10-25 19:42:12 -0400
+Started GET "/testpage" for 127.0.0.1 at 2019-10-25 19:45:23 -0400
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 77ms (Views: 76.3ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2019-10-25 19:45:23 -0400
+Started GET "/testpage" for 127.0.0.1 at 2019-10-25 19:48:31 -0400
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 446ms (Views: 446.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2019-10-25 19:48:32 -0400
+Started GET "/testpage" for 127.0.0.1 at 2019-10-25 19:48:33 -0400
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 81ms (Views: 80.7ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2019-10-25 19:48:33 -0400

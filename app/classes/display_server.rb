@@ -60,7 +60,7 @@ private
             puts "outer loop error: #{ e.class}: #{ e.message }"
             puts $!.backtrace
           end
-          print "preparing to broadcast to Positouch Channel..."
+          print "preparing to broadcast to Positouch Channel #{ term_num + 1 }..."
           Thread.pass
           PositouchChannel.broadcast_to term_num + 1, check: parsed_check( doc ), check_total: check_total( doc )
           puts "message broadcasted @ " + Time.now.to_s

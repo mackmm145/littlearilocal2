@@ -46,19 +46,19 @@
     </div>
     <div id="menma" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">シナチク / Bamboo Shoot</br>
+        <div class="ramen-item-descriptor1">シナチク / Bamboo Shoot
         <span class="ramen-request-item-price">+0.25</span></div>
       </div>
     </div>
     <div id="beni-shoga" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">紅生姜 / Pickled Ginger</br>
+        <div class="ramen-item-descriptor1">紅生姜 / Pickled Ginger
         <span class="ramen-request-item-price">+0.25</span></div>
       </div>
     </div>
     <div id="naruto" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">ナルト / Naruto / Fish Cake</br>
+        <div class="ramen-item-descriptor1">ナルト / Naruto / Fish Cake
         <span class="ramen-request-item-price">+0.25</span></div>
       </div>
     </div>
@@ -69,7 +69,19 @@
     </div>
     <div class="ramen-item">
       <div id="negi-abura" class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">味付け玉子 / Marinated Egg</br>
+        <div class="ramen-item-descriptor1">味付け玉子 / Marinated Egg
+        <span class="ramen-request-item-price">+0.50</span></div>
+      </div>
+    </div>
+    <div class="ramen-item">
+      <div id="corn" class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">コーン / Corn
+        <span class="ramen-request-item-price">+0.50</span></div>
+      </div>
+    </div>
+    <div class="ramen-item">
+      <div id="negi-abura" class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">きくらげ / Kikurage Mushroom
         <span class="ramen-request-item-price">+0.50</span></div>
       </div>
     </div>
@@ -122,7 +134,7 @@
       received: function( response ) {
         console.log( "[" + response[ 'display_state' ] + ":" + response['state'] + ']' )
         // $('.main-container').hide()
-        if ( <%= @test %> != true ) {
+        if ( <%= @respond_to_ramen %> == true ) {
           switch( response[ 'display_state' ] ) {
             case 'ramen_toppings':              
               $('.image-blurbs').hide()

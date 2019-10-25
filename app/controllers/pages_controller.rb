@@ -9,19 +9,22 @@ class PagesController < ApplicationController
   end
 
   def testpage
-    @test=true
+    @test = true
+    @respond_to_ramen = true
     @term_num = 1
     render 'posi_generic'
   end
-
+  
   def posi1
-    @test=false
+    @test = false
+    @respond_to_ramen = false
     @term_num = 1
     render 'posi_generic'
   end
-
+  
   def posi2
-    @test=false
+    @test = false
+    @respond_to_ramen = false
     @term_num = 2
     render 'posi_generic'
   end
