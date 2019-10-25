@@ -5,7 +5,7 @@ loop do
   begin
     puts ""; puts Time.now
     if Time.now.hour > 10 && Time.now.hour < 22
-      
+
       fr.run
       print "hibernating for 5 minutes"
       60.times do
