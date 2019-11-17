@@ -9,7 +9,7 @@ class MenuItemGuide
         if cell_num.to_i > 999999
           @cell = Cell.find( cell_num.to_s )
         else
-          puts cell_num.to_s
+          puts cell_num.to_s if Rails.env.development?
           @cell = Item.where( Number: cell_num.to_s ).first.cell
           @valid = false if @cell.nil?
         end

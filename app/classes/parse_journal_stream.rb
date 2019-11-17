@@ -1,5 +1,3 @@
-
-# puts Rails.root.join("app", "channels", "customer_display_channel")
 require Rails.root.join("app", "channels", "customer_display_channel")
 
 class ParseJournalStream
@@ -14,18 +12,18 @@ class ParseJournalStream
   end
 
   def command( term_num, stream_hash )
-    # puts term_num
-    # puts stream_hash
+    # puts term_num if Rails.env.development?
+    # puts stream_hash if Rails.env.development?
     case stream_hash.dig( "Journal", "JournalEntry", "FunctionNumber" )
       when "1" # log in
-        puts "Log In"
+        puts "Log In" if Rails.env.development?
       when "2" # create check
-        puts "Check Created"
+        puts "Check Created" if Rails.env.development?
         @state = :check_opened
       when "3" # order item selected
         case stream_hash.dig( "Journal", "JournalEntry", "SubFunction" )
           when "Main Item"
-            puts "Main Item"
+            puts "Main Item" if Rails.env.development?
 
             item_number = stream_hash.dig( "Journal", "JournalEntry", "ItemNumber" )
             ramen_items = [ '3000', '3001', '3002', '3004' ]
@@ -37,34 +35,35 @@ class ParseJournalStream
 
           when "Modifier"
             if @state == :item_entry_ramen
+              
               item_number = stream_hash.dig( "Journal", "JournalEntry", "ItemNumber" )
               noodle_items = [ '2603', '2604' ] ##probably need to put other items here.
-              if noodle_items.include?( item_number )
+              # if noodle_items.include?( item_number )
                 ###
                 ##
                 ###
                 ##### this controls the switch to the ramen ingredients
                 ##### 
-                puts "getting read to broadcast to customer display"
-                CustomerDisplayChannel.broadcast_to (term_num.to_i + 1).to_s, display_state: "ramen_toppings", state: @state
-                puts "finished broadcasting to broadcast to customer display"
-              end
+                # puts "getting read to broadcast to customer display"
+                # CustomerDisplayChannel.broadcast_to (term_num.to_i + 1).to_s, display_state: "ramen_toppings", state: @state
+                # puts "finished broadcasting to broadcast to customer display"
+              # end
             end
         end
       when "4" # delete
-        if stream_hash.dig( "Journal", "JournalEntry", "SubFunction" ) == "MainItem"
+        # if stream_hash.dig( "Journal", "JournalEntry", "SubFunction" ) == "MainItem"
           @state = :check_opened
-        end
+        # end
       when "8" # send
-        puts "send"
+        puts "send" if Rails.env.development?
         @state = :payment_screen
       when "11" # close check
-        puts "close check"
+        puts "close check" if Rails.env.development?
         @state = :login_screen
       when "12" # credit card
       when "16" # set discount
       when "20" # quit order screen
-        puts "Quit Order Screen"
+        puts "Quit Order Screen" if Rails.env.development?
         @state = :login_screen
       when "27" # no sale
       when "29" # bump vdu
@@ -72,11 +71,11 @@ class ParseJournalStream
     end
 
     ##broadcast changes to term_num customer_display
-    # puts @state
+    # puts @state if Rails.env.development?
     case @state
       when :item_entry_ramen
         ##broadcast to switch to by request screen
-        # CustomerDisplayChannel.broadcast_to (term_num.to_i+1).to_s, { display_state: "ramen_toppings", state: @state }
+        CustomerDisplayChannel.broadcast_to (term_num.to_i+1).to_s, { display_state: "ramen_toppings", state: @state }
       when :item_entry
         CustomerDisplayChannel.broadcast_to (term_num.to_i+1).to_s, { display_state: "image_blurbs", state: @state }
         ##broadcast to switch to regular screen

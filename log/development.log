@@ -20382,3 +20382,947 @@ Completed 200 OK in 81ms (Views: 80.7ms)
 
 
 Started GET "/cable" for 127.0.0.1 at 2019-10-25 19:48:33 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:35 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:35 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 20:03:35 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:35 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:35 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 20:03:35 -0400
+Processing by PagesController#posi2 as HTML
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:35 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:35 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:35 -0400
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (15.4ms)
+Processing by PagesController#posi1 as HTML
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:35 -0400
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:35 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:35 -0400
+  Rendered pages/posi_generic.html.erb within layouts/application (29.8ms)
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:35 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Completed 200 OK in 203ms (Views: 203.1ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Completed 200 OK in 164ms (Views: 164.0ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:36 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:37 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:37 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:37 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:37 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 20:03:37 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 20:03:37 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:06:50 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:06:50 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:06:58 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:06:58 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (324.6ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (132.2ms)
+Completed 200 OK in 229ms (Views: 229.0ms)
+
+
+Completed 200 OK in 431ms (Views: 430.6ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:06:59 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:06:59 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:09:32 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:09:32 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:09:32 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:09:32 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (74.9ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (250.5ms)
+Completed 200 OK in 350ms (Views: 350.0ms)
+
+
+Completed 200 OK in 295ms (Views: 294.8ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:09:32 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:09:32 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:10:56 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 54ms (Views: 53.8ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:10:56 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:11:01 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 72ms (Views: 72.2ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:11:01 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:14:22 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:14:22 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (242.3ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (289.4ms)
+Completed 200 OK in 399ms (Views: 398.4ms)
+
+
+Completed 200 OK in 392ms (Views: 391.7ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:14:22 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:14:22 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:15:00 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:15:00 -0400
+Processing by PagesController#posi1 as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (218.3ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (285.3ms)
+Completed 500 Internal Server Error in 367ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     6:     <%= csp_meta_tag %>
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__401177922_99602480'
+app/controllers/pages_controller.rb:24:in `posi1'
+Completed 200 OK in 440ms (Views: 440.0ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:15:01 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:15:01 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:18:32 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (167.5ms)
+Completed 200 OK in 232ms (Views: 231.9ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:18:33 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:18:43 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 62ms (Views: 61.9ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:18:44 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:19:35 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:19:35 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (232.7ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 329ms (Views: 328.9ms)
+
+
+Completed 200 OK in 157ms (Views: 157.2ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:19:35 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:19:35 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:20:26 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:20:26 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (218.1ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (292.2ms)
+Completed 200 OK in 380ms (Views: 379.6ms)
+
+
+Completed 200 OK in 407ms (Views: 407.0ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:20:26 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:20:26 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:29:04 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:29:04 -0400
+Processing by PagesController#posi1 as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (251.9ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (280.9ms)
+Completed 200 OK in 394ms (Views: 394.2ms)
+
+
+Completed 200 OK in 388ms (Views: 388.3ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:29:04 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:29:04 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:49:16 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:49:16 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (222.6ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (74.9ms)
+Completed 500 Internal Server Error in 131ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     6:     <%= csp_meta_tag %>
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__361714853_58796180'
+app/controllers/pages_controller.rb:32:in `posi2'
+Completed 200 OK in 375ms (Views: 374.3ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:49:17 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:55:35 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 64ms (Views: 63.8ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:55:35 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 21:57:52 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 21:57:52 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (262.8ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (300.1ms)
+Completed 200 OK in 414ms (Views: 414.0ms)
+
+
+Completed 200 OK in 407ms (Views: 406.7ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 21:57:53 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 21:57:53 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:01:50 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:01:50 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:01:55 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:01:55 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (345.9ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (318.1ms)
+Completed 200 OK in 443ms (Views: 443.2ms)
+
+
+Completed 200 OK in 457ms (Views: 456.3ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:01:55 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:01:55 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:20:36 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:20:36 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (277.1ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (315.2ms)
+Completed 200 OK in 419ms (Views: 418.8ms)
+
+
+Completed 200 OK in 431ms (Views: 431.0ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:20:37 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:20:37 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:20:37 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 77ms (Views: 76.8ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:20:37 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:25:23 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (165.0ms)
+Completed 200 OK in 235ms (Views: 234.6ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:25:23 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:26:02 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:26:07 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (198.6ms)
+Completed 200 OK in 275ms (Views: 274.6ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:26:07 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:26:08 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 53ms (Views: 52.5ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:26:08 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:29:13 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:29:13 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (240.2ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (425.3ms)
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:29:14 -0400
+Completed 200 OK in 501ms (Views: 500.7ms)
+
+
+Completed 200 OK in 559ms (Views: 558.7ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:29:14 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:29:14 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:31:04 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:31:04 -0400
+Processing by PagesController#posi1 as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (247.6ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (288.7ms)
+Completed 200 OK in 398ms (Views: 397.3ms)
+
+
+Completed 200 OK in 391ms (Views: 391.0ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:31:05 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:31:05 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:33:42 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:33:42 -0400
+Processing by PagesController#posi1 as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (336.1ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (366.0ms)
+Completed 500 Internal Server Error in 466ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     6:     <%= csp_meta_tag %>
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__62204093_92005400'
+app/controllers/pages_controller.rb:24:in `posi1'
+Completed 200 OK in 540ms (Views: 540.1ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:33:43 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:33:46 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 65ms (Views: 64.9ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:33:46 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:34:28 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:34:28 -0400
+Processing by PagesController#posi1 as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (314.8ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (280.9ms)
+Completed 200 OK in 420ms (Views: 420.2ms)
+
+
+Completed 200 OK in 432ms (Views: 431.4ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:34:28 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:34:28 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:35:53 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:35:53 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (291.1ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (256.6ms)
+Completed 200 OK in 397ms (Views: 397.2ms)
+
+
+Completed 200 OK in 407ms (Views: 407.1ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:35:53 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:35:53 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:36:38 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:36:38 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:36:38 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:36:38 -0400
+Processing by PagesController#posi1 as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (320.6ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (249.2ms)
+Completed 200 OK in 428ms (Views: 428.2ms)
+
+
+Completed 200 OK in 422ms (Views: 421.4ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:36:39 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:36:39 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:44:39 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:44:39 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (247.5ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (284.6ms)
+Completed 200 OK in 393ms (Views: 393.1ms)
+
+
+Completed 200 OK in 386ms (Views: 385.8ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:44:40 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:44:40 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:47:47 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:47:47 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:47:58 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:47:58 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (273.3ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (63.0ms)
+Completed 500 Internal Server Error in 151ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__1066974988_140264120'
+app/controllers/pages_controller.rb:24:in `posi1'
+Completed 200 OK in 427ms (Views: 426.4ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:47:59 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:48:53 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:48:58 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (191.7ms)
+Completed 200 OK in 271ms (Views: 270.5ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:48:58 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:51:08 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (172.5ms)
+Completed 200 OK in 240ms (Views: 239.3ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:51:09 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:53:20 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (172.7ms)
+Completed 200 OK in 238ms (Views: 237.8ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:53:20 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:53:27 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 71ms (Views: 70.9ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:53:27 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:56:23 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:56:23 -0400
+Processing by PagesController#posi1 as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (301.4ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (197.3ms)
+Completed 200 OK in 403ms (Views: 403.0ms)
+
+
+Completed 200 OK in 382ms (Views: 382.2ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:56:23 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:56:23 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:58:17 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:58:17 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:58:22 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:58:22 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (324.0ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (225.8ms)
+Completed 200 OK in 426ms (Views: 425.5ms)
+
+
+Completed 200 OK in 405ms (Views: 404.9ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:58:22 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:58:22 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 22:59:48 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 22:59:48 -0400
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (284.7ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (216.9ms)
+Completed 200 OK in 374ms (Views: 373.4ms)
+
+
+Completed 200 OK in 396ms (Views: 395.5ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 22:59:48 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 22:59:48 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:01:24 -0400
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 23:01:24 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 23:01:29 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 23:01:29 -0400
+Processing by PagesController#posi1 as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (298.9ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (229.6ms)
+Completed 500 Internal Server Error in 402ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__500534330_50654320'
+app/controllers/pages_controller.rb:32:in `posi2'
+Completed 200 OK in 434ms (Views: 433.7ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:01:30 -0400
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:02:03 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 23:02:08 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (196.2ms)
+Completed 200 OK in 267ms (Views: 266.3ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:02:08 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 23:03:28 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (171.6ms)
+Completed 200 OK in 239ms (Views: 238.4ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:03:28 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 23:05:31 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:05:31 -0400
+  Rendered pages/posi_generic.html.erb within layouts/application (239.1ms)
+Completed 200 OK in 307ms (Views: 307.1ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:05:32 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 23:08:54 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (171.4ms)
+Completed 200 OK in 237ms (Views: 236.3ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:08:54 -0400
+Started GET "/posi1" for 10.99.10.1 at 2019-10-25 23:13:06 -0400
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (180.5ms)
+Completed 200 OK in 246ms (Views: 245.8ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-10-25 23:13:06 -0400
+Started GET "/posi2" for 10.99.10.2 at 2019-10-25 23:13:30 -0400
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 65ms (Views: 64.5ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-10-25 23:13:31 -0400
+Started GET "/posi1" for 127.0.0.1 at 2019-11-05 12:29:06 -0500
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (504.6ms)
+Completed 200 OK in 851ms (Views: 851.3ms)
+
+
+Started GET "/cable" for ::1 at 2019-11-05 12:29:08 -0500
+Started GET "/posi1" for 10.99.10.1 at 2019-11-14 23:51:12 -0500
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (457.8ms)
+Completed 200 OK in 774ms (Views: 773.9ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-14 23:51:13 -0500
+Started GET "/posi2" for 10.99.10.2 at 2019-11-14 23:51:51 -0500
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 86ms (Views: 85.4ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-11-14 23:51:52 -0500
+Started GET "/posi2" for 10.99.10.2 at 2019-11-14 23:54:42 -0500
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/posi1" for 10.99.10.1 at 2019-11-14 23:54:43 -0500
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (197.6ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (66.1ms)
+Completed 200 OK in 287ms (Views: 287.2ms)
+
+
+Completed 200 OK in 155ms (Views: 154.9ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-14 23:54:43 -0500
+Started GET "/cable" for 10.99.10.2 at 2019-11-14 23:54:43 -0500
+Started GET "/posi2" for 10.99.10.2 at 2019-11-14 23:54:58 -0500
+Started GET "/posi1" for 10.99.10.1 at 2019-11-14 23:54:58 -0500
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/cable" for 10.99.10.1 at 2019-11-14 23:54:59 -0500
+Started GET "/cable" for 10.99.10.2 at 2019-11-14 23:54:59 -0500
+Started GET "/cable" for 10.99.10.1 at 2019-11-14 23:55:02 -0500
+Started GET "/cable" for 10.99.10.2 at 2019-11-14 23:55:03 -0500
+  Rendered pages/posi_generic.html.erb within layouts/application (5140.1ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (5257.6ms)
+Completed 200 OK in 6761ms (Views: 6758.5ms)
+
+
+Completed 500 Internal Server Error in 6761ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__906930619_77111020'
+app/controllers/pages_controller.rb:24:in `posi1'
+Started GET "/cable" for 10.99.10.2 at 2019-11-14 23:55:06 -0500
+Started GET "/posi1" for 10.99.10.1 at 2019-11-14 23:58:10 -0500
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (134.2ms)
+Completed 200 OK in 206ms (Views: 206.0ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-14 23:58:11 -0500
+Started GET "/posi2" for 10.99.10.2 at 2019-11-14 23:58:25 -0500
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 80ms (Views: 79.5ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-11-14 23:58:25 -0500
+Started GET "/testpage" for 10.99.10.1 at 2019-11-15 00:01:57 -0500
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 75ms (Views: 74.6ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:01:57 -0500
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:05:42 -0500
+Started GET "/cable" for 10.99.10.2 at 2019-11-15 00:05:43 -0500
+Started GET "/testpage" for 10.99.10.1 at 2019-11-15 00:05:46 -0500
+Started GET "/posi2" for 10.99.10.2 at 2019-11-15 00:05:46 -0500
+Processing by PagesController#testpage as HTML
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (237.0ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (323.1ms)
+Completed 200 OK in 408ms (Views: 408.1ms)
+
+
+Completed 200 OK in 431ms (Views: 430.7ms)
+
+
+Started GET "/cable" for 10.99.10.2 at 2019-11-15 00:05:47 -0500
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:05:47 -0500
+Started GET "/testpage" for 10.99.10.1 at 2019-11-15 00:07:50 -0500
+Started GET "/posi2" for 10.99.10.2 at 2019-11-15 00:07:50 -0500
+Processing by PagesController#posi2 as HTML
+Processing by PagesController#testpage as HTML
+Started GET "/cable" for 10.99.10.2 at 2019-11-15 00:07:50 -0500
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (367.7ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (340.2ms)
+Completed 500 Internal Server Error in 451ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     6:     <%= csp_meta_tag %>
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__231655948_94353080'
+app/controllers/pages_controller.rb:32:in `posi2'
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:07:51 -0500
+Completed 200 OK in 549ms (Views: 548.9ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:07:51 -0500
+Started GET "/testpage" for 10.99.10.1 at 2019-11-15 00:26:19 -0500
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (140.5ms)
+Completed 200 OK in 209ms (Views: 208.3ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:26:19 -0500
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:35:47 -0500
+Started GET "/testpage" for 10.99.10.1 at 2019-11-15 00:35:50 -0500
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (130.7ms)
+Completed 200 OK in 219ms (Views: 218.9ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:35:51 -0500
+Started GET "/testpage" for 10.99.10.1 at 2019-11-15 00:38:24 -0500
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (131.6ms)
+Completed 200 OK in 194ms (Views: 194.2ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:38:24 -0500
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:40:40 -0500
+Started GET "/testpage" for 10.99.10.1 at 2019-11-15 00:40:40 -0500
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (142.2ms)
+Completed 200 OK in 209ms (Views: 209.2ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:40:40 -0500
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:42:05 -0500
+Started GET "/testpage" for 10.99.10.1 at 2019-11-15 00:42:08 -0500
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (134.0ms)
+Completed 200 OK in 222ms (Views: 221.4ms)
+
+
+Started GET "/cable" for 10.99.10.1 at 2019-11-15 00:42:09 -0500
+Started GET "/posi1" for 10.99.10.1 at 2019-11-16 02:21:33 -0500
+Processing by PagesController#posi1 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+Started GET "/posi2" for 10.99.10.2 at 2019-11-16 02:21:33 -0500
+Processing by PagesController#posi2 as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (349.8ms)
+  Rendered pages/posi_generic.html.erb within layouts/application (493.1ms)
+Completed 500 Internal Server Error in 465ms
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+     6:     <%= csp_meta_tag %>
+     7:     <%= action_cable_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag    'application', media: 'all' %>
+    10:     <%= javascript_include_tag 'application' %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1049301555_116975580'
+app/controllers/pages_controller.rb:32:in `posi2'
+Completed 200 OK in 825ms (Views: 824.2ms)
+
+
+Started GET "/testpage" for 10.99.10.99 at 2019-11-16 02:21:34 -0500
+Started GET "/cable" for 10.99.10.1 at 2019-11-16 02:21:34 -0500
+Processing by PagesController#testpage as HTML
+Started GET "/testpage" for 10.99.10.99 at 2019-11-16 02:21:35 -0500
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (24.1ms)
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 1097ms (Views: 1096.3ms)
+
+
+Completed 200 OK in 251ms (Views: 250.5ms)
+
+
+Started GET "/cable" for 10.99.10.99 at 2019-11-16 02:21:36 -0500
+Started GET "/testpage" for 10.99.10.99 at 2019-11-16 02:22:22 -0500
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 83ms (Views: 82.8ms)
+
+
+Started GET "/cable" for 10.99.10.99 at 2019-11-16 02:22:22 -0500
+Started GET "/testpage" for 10.99.10.99 at 2019-11-16 02:22:45 -0500
+Processing by PagesController#testpage as HTML
+  Rendering pages/posi_generic.html.erb within layouts/application
+  Rendered pages/posi_generic.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 106ms (Views: 105.3ms)
+
+
+Started GET "/cable" for 10.99.10.99 at 2019-11-16 02:22:45 -0500

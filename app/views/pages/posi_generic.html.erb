@@ -23,6 +23,11 @@
         <div class="ramen-item-descriptor1">ネギ / Green Onion</div>
       </div>
     </div>
+    <div id="iri-goma" class="ramen-item">
+      <div class="ramen-item-inner">
+        <div class="ramen-item-descriptor1">ごま / Sesame Seed</div>
+      </div>
+    </div>
   </div>
   <div class="ramen-title">
     Ramen - By Request Toppings
@@ -30,63 +35,41 @@
   <div class="ramen-request-items ramen-items-container">
     <div id="spicy-paste" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">激辛ペースト / Spicy Paste</br>
+        <div class="ramen-item-descriptor1">激辛ペースト / Spicy Paste<br/>
         <span class="ramen-request-item-price">+1.00</span></div>
-      </div>
-    </div>
-    <div id="nori" class="ramen-item ramen-item-selected">
-      <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">海苔 / Nori / Seaweed</div>
-      </div>
-    </div>
-    <div id="iri-goma" class="ramen-item">
-      <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">ごま / Sesame Seed</div>
       </div>
     </div>
     <div id="menma" class="ramen-item">
       <div class="ramen-item-inner">
         <div class="ramen-item-descriptor1">シナチク / Bamboo Shoot
-        <span class="ramen-request-item-price">+0.25</span></div>
+        <span class="ramen-request-item-price">+1.00</span></div>
       </div>
     </div>
     <div id="beni-shoga" class="ramen-item">
       <div class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">紅生姜 / Pickled Ginger
-        <span class="ramen-request-item-price">+0.25</span></div>
+        <div class="ramen-item-descriptor1">紅生姜 / Pickled Ginger<br/>
+        <span class="ramen-request-item-price">+0.50</span></div>
       </div>
     </div>
     <div id="naruto" class="ramen-item">
       <div class="ramen-item-inner">
         <div class="ramen-item-descriptor1">ナルト / Naruto / Fish Cake
-        <span class="ramen-request-item-price">+0.25</span></div>
+        <span class="ramen-request-item-price">+0.50</span></div>
       </div>
     </div>
     <div class="ramen-item">
       <div id="negi-abura" class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">ネギ油 / Green Onion Oil</div>
-      </div>
-    </div>
-    <div class="ramen-item">
-      <div id="negi-abura" class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">味付け玉子 / Marinated Egg
+        <div class="ramen-item-descriptor1">ニタマゴ / Hard Boiled Egg
         <span class="ramen-request-item-price">+0.50</span></div>
       </div>
     </div>
     <div class="ramen-item">
       <div id="corn" class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">コーン / Corn
-        <span class="ramen-request-item-price">+0.50</span></div>
-      </div>
-    </div>
-    <div class="ramen-item">
-      <div id="negi-abura" class="ramen-item-inner">
-        <div class="ramen-item-descriptor1">きくらげ / Kikurage Mushroom
+        <div class="ramen-item-descriptor1">コーン / Corn<br/>
         <span class="ramen-request-item-price">+0.50</span></div>
       </div>
     </div>
   </div>
-
 </div>
 <script>
 (function() {
@@ -100,17 +83,16 @@
     $('.ramen-container').show()
     } else {
     $('.main-container').show()
-    // $('.main-container').hide()
     $('.ramen-container').hide()
     }
 
     App.terminalChannel = App.cable.subscriptions.create( { channel: 'PositouchChannel', terminal: '<%= @term_num.to_s %>' }, {
       connected: function() {
-        console.log( "connected to positouch broadcast" )
+        if ( <%= @test %>==true ) { console.log( "connected to positouch broadcast" ) }
 
       },
       received: function( response ) {
-        console.log( response )
+        if ( <%= @test %>==true ) { console.log( response ) }
         $('#check #order')[0].innerHTML = response['check'];
         $('#check #total')[0].innerHTML = "Total:&nbsp;&nbsp;" + response['check_total'];
 
@@ -119,7 +101,7 @@
         return false;
       },
       disconnected: function() {
-        console.log("disconnected")
+        if ( <%= @test %>==true ) { console.log("disconnected") }
         setTimeout(function(){
           window.location.reload(true);
         }, 5000);
@@ -148,15 +130,9 @@
         }
       },
       disconnected: function() {
-        console.log( "disconnected from customer display" )
+        if ( <%= @test %>==true ) { console.log( "disconnected from customer display" ) }
       }
     });
-
-    // setInterval(function () {
-    //   index = index + 1 < $imageEls.length ? index + 1 : 0;
-    //   $imageEls.eq(index).addClass('show');
-    //   $imageEls.eq(index - 1).removeClass('show');
-    // }, 2000);
   })
 
 }).call(this);

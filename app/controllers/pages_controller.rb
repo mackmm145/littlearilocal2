@@ -5,13 +5,14 @@ class PagesController < ApplicationController
   end
 
   def customer_display
-    puts "customer display #" + @params[ "term_num" ]
+    puts "customer display #" + @params[ "term_num" ]  if Rails.env.development?
   end
 
   def testpage
     @test = true
     @respond_to_ramen = true
     @term_num = 1
+    @term_name = "TEST" + rand(1000).to_s
     render 'posi_generic'
   end
   
@@ -19,6 +20,7 @@ class PagesController < ApplicationController
     @test = false
     @respond_to_ramen = false
     @term_num = 1
+    @term_name = "TERM1:" + rand(1000).to_s
     render 'posi_generic'
   end
   
@@ -26,6 +28,7 @@ class PagesController < ApplicationController
     @test = false
     @respond_to_ramen = false
     @term_num = 2
+    @term_name = "TERM2:" + rand(1000).to_s
     render 'posi_generic'
   end
 

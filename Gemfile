@@ -5,6 +5,8 @@ ruby '2.5.3'
 # ruby '2.5.0'
 
 gem 'mechanize', '2.7.6'
+gem "listen", "~> 3.0"
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 
 gem 'xml-to-json', '~> 1.0.2'
